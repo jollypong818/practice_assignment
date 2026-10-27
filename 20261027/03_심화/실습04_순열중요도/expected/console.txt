@@ -1,0 +1,7 @@
+MDI: 변환 후 8 열 / 순열: 원본 4 열
+      feature  mean_F1_drop  repeat_std
+  input_chars        0.0678      0.1361
+allowed_tools        0.0542      0.1185
+    task_type        0.1737      0.0990
+     priority       -0.0206      0.1801
+음수는 이 valid 표본에서 섞었을 때 점수가 높아졌다는 뜻입니다. 인과관계는 아닙니다.

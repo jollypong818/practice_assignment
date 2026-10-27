@@ -1,0 +1,11 @@
+﻿fold,feature,actual,expected_fit_only,passed
+1,input_chars,1309.0,1309.0,True
+1,allowed_tools,3.0,3.0,True
+2,input_chars,1303.0,1303.0,True
+2,allowed_tools,3.0,3.0,True
+3,input_chars,1315.0,1315.0,True
+3,allowed_tools,2.0,2.0,True
+4,input_chars,1315.0,1315.0,True
+4,allowed_tools,3.0,3.0,True
+5,input_chars,1338.0,1338.0,True
+5,allowed_tools,3.0,3.0,True

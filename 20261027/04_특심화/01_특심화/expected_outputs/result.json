@@ -1,0 +1,26 @@
+{
+  "sensitivity": [
+    {
+      "case": "original",
+      "threshold": 500.0,
+      "pred_250": 0,
+      "pred_850": 1,
+      "pred_outside_1200": 1,
+      "train_accuracy": 1.0
+    },
+    {
+      "case": "one_label_changed",
+      "threshold": 250.0,
+      "pred_250": 0,
+      "pred_850": 1,
+      "pred_outside_1200": 1,
+      "train_accuracy": 1.0
+    }
+  ],
+  "original_preserved": true,
+  "training_range": [
+    100,
+    900
+  ],
+  "extrapolation_query": 1200
+}

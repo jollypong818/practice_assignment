@@ -1,0 +1,13 @@
+2026-10-27 Day7 실습 시작
+
+1. 이 폴더 전체를 압축 해제하고 VS Code로 엽니다.
+2. README.md의 OS별 가상환경/패키지 설치를 수행합니다.
+3. python check_env.py
+4. ex01_tree/01_기본필수/README.md부터 시작합니다.
+5. 각 교시 기본필수1단계를 우선 수행하고 응용·심화는 선택합니다.
+6. 실습07 프로젝트를 실습08에서 이어서 검증합니다.
+
+수강생 코드의 NotImplementedError는 TODO 미완료 표시입니다.
+강사용 코드에는 정답과 한국어 설명 주석이 있습니다.
+검증 환경: Linux/Python3.13.5. Windows/macOS 직접 실행검증은 하지 않았습니다.
+상세 버전: requirements-lock.txt. 모든 데이터는 수업용 합성자료입니다.

@@ -1,0 +1,30 @@
+{
+  "diagnostics": [
+    {
+      "case": "restricted",
+      "depth": "1",
+      "leaf": 5,
+      "train_F1": 0.5,
+      "valid_F1": 0.2857142857142857,
+      "gap": 0.2142857142857143
+    },
+    {
+      "case": "reference",
+      "depth": "3",
+      "leaf": 3,
+      "train_F1": 0.7096774193548387,
+      "valid_F1": 0.3333333333333333,
+      "gap": 0.37634408602150543
+    },
+    {
+      "case": "unrestricted",
+      "depth": "None",
+      "leaf": 1,
+      "train_F1": 1.0,
+      "valid_F1": 0.5,
+      "gap": 0.5
+    }
+  ],
+  "test_evaluated": false,
+  "warning": "valid20건 진단만으로 정상/과소/과적합을 확정하지 않는다. 최종 기본 후보는 변경하지 않는다."
+}

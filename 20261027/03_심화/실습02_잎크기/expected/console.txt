@@ -1,0 +1,4 @@
+min_samples_leaf  leaves  train_F1  valid_F1
+                1       4    0.7097    0.3333
+                3       4    0.7097    0.3333
+                5       4    0.7097    0.3333

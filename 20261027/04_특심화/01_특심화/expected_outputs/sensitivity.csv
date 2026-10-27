@@ -1,0 +1,3 @@
+﻿case,threshold,pred_250,pred_850,pred_outside_1200,train_accuracy
+original,500.0,0,1,1,1.0
+one_label_changed,250.0,0,1,1,1.0

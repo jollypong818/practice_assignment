@@ -1,0 +1,24 @@
+{
+  "separate_bias_experiment": [
+    {
+      "feature": "signal",
+      "MDI": 0.4174579296392068,
+      "F1_drop_mean": 0.07879726693290065,
+      "repeat_std": 0.0410439160528792
+    },
+    {
+      "feature": "signal_copy",
+      "MDI": 0.42384521426677924,
+      "F1_drop_mean": 0.14638581038730022,
+      "repeat_std": 0.05735202016788467
+    },
+    {
+      "feature": "independent_high_cardinality_noise",
+      "MDI": 0.15869685609401407,
+      "F1_drop_mean": -0.04652657310173282,
+      "repeat_std": 0.020123093409647973
+    }
+  ],
+  "not_main_dataset": true,
+  "warning": "복제열은 중요도를 나눠 가질 수 있다. 잡음열의 특정 순위를 보장하지 않는다. 이 결과로 공통 데이터의 열을 삭제하지 않는다."
+}

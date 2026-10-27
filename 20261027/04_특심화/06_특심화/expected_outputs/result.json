@@ -1,0 +1,112 @@
+{
+  "fold_statistics": [
+    {
+      "fold": 1,
+      "feature": "input_chars",
+      "actual": 1309.0,
+      "expected_fit_only": 1309.0,
+      "passed": true
+    },
+    {
+      "fold": 1,
+      "feature": "allowed_tools",
+      "actual": 3.0,
+      "expected_fit_only": 3.0,
+      "passed": true
+    },
+    {
+      "fold": 2,
+      "feature": "input_chars",
+      "actual": 1303.0,
+      "expected_fit_only": 1303.0,
+      "passed": true
+    },
+    {
+      "fold": 2,
+      "feature": "allowed_tools",
+      "actual": 3.0,
+      "expected_fit_only": 3.0,
+      "passed": true
+    },
+    {
+      "fold": 3,
+      "feature": "input_chars",
+      "actual": 1315.0,
+      "expected_fit_only": 1315.0,
+      "passed": true
+    },
+    {
+      "fold": 3,
+      "feature": "allowed_tools",
+      "actual": 2.0,
+      "expected_fit_only": 2.0,
+      "passed": true
+    },
+    {
+      "fold": 4,
+      "feature": "input_chars",
+      "actual": 1315.0,
+      "expected_fit_only": 1315.0,
+      "passed": true
+    },
+    {
+      "fold": 4,
+      "feature": "allowed_tools",
+      "actual": 3.0,
+      "expected_fit_only": 3.0,
+      "passed": true
+    },
+    {
+      "fold": 5,
+      "feature": "input_chars",
+      "actual": 1338.0,
+      "expected_fit_only": 1338.0,
+      "passed": true
+    },
+    {
+      "fold": 5,
+      "feature": "allowed_tools",
+      "actual": 3.0,
+      "expected_fit_only": 3.0,
+      "passed": true
+    }
+  ],
+  "grid_results": [
+    {
+      "param_model__max_depth": 2,
+      "param_model__min_samples_leaf": 1,
+      "mean_test_score": 0.49333333333333335,
+      "std_test_score": 0.09752492558885192,
+      "rank_test_score": 3
+    },
+    {
+      "param_model__max_depth": 2,
+      "param_model__min_samples_leaf": 3,
+      "mean_test_score": 0.49333333333333335,
+      "std_test_score": 0.09752492558885192,
+      "rank_test_score": 3
+    },
+    {
+      "param_model__max_depth": 4,
+      "param_model__min_samples_leaf": 1,
+      "mean_test_score": 0.7187301587301588,
+      "std_test_score": 0.2387048281056488,
+      "rank_test_score": 1
+    },
+    {
+      "param_model__max_depth": 4,
+      "param_model__min_samples_leaf": 3,
+      "mean_test_score": 0.672063492063492,
+      "std_test_score": 0.23164946890167656,
+      "rank_test_score": 2
+    }
+  ],
+  "best_params": {
+    "model__max_depth": 4,
+    "model__min_samples_leaf": 1
+  },
+  "best_CV_F1": 0.7187301587301588,
+  "refit_n": 60,
+  "experiment_name": "TreeGrid (별도 탐색, 기본Tree 교체 아님)",
+  "test_evaluated": false
+}

@@ -1,0 +1,109 @@
+{
+  "max_difference": 0.0,
+  "probabilities_equal": true,
+  "fake_votes": 1,
+  "fake_probability_mean": 0.3433333333333333,
+  "fake_probability_class": 0,
+  "probability_check": [
+    {
+      "request_id": "R094",
+      "tree_mean_p1": 0.13430392646569117,
+      "forest_p1": 0.13430392646569117
+    },
+    {
+      "request_id": "R044",
+      "tree_mean_p1": 0.28048358585858585,
+      "forest_p1": 0.28048358585858585
+    },
+    {
+      "request_id": "R073",
+      "tree_mean_p1": 0.41842198487786747,
+      "forest_p1": 0.41842198487786747
+    },
+    {
+      "request_id": "R087",
+      "tree_mean_p1": 0.5890450007508832,
+      "forest_p1": 0.5890450007508832
+    },
+    {
+      "request_id": "R051",
+      "tree_mean_p1": 0.2118194254575833,
+      "forest_p1": 0.2118194254575833
+    },
+    {
+      "request_id": "R050",
+      "tree_mean_p1": 0.11397406596671301,
+      "forest_p1": 0.11397406596671301
+    },
+    {
+      "request_id": "R095",
+      "tree_mean_p1": 0.21626242642806104,
+      "forest_p1": 0.21626242642806104
+    },
+    {
+      "request_id": "R019",
+      "tree_mean_p1": 0.5208357655416481,
+      "forest_p1": 0.5208357655416481
+    },
+    {
+      "request_id": "R035",
+      "tree_mean_p1": 0.20218542057357858,
+      "forest_p1": 0.20218542057357858
+    },
+    {
+      "request_id": "R034",
+      "tree_mean_p1": 0.433820595383289,
+      "forest_p1": 0.433820595383289
+    },
+    {
+      "request_id": "R086",
+      "tree_mean_p1": 0.4392069564422507,
+      "forest_p1": 0.4392069564422507
+    },
+    {
+      "request_id": "R014",
+      "tree_mean_p1": 0.15076952227339224,
+      "forest_p1": 0.15076952227339224
+    },
+    {
+      "request_id": "R001",
+      "tree_mean_p1": 0.1792584586466165,
+      "forest_p1": 0.1792584586466165
+    },
+    {
+      "request_id": "R033",
+      "tree_mean_p1": 0.5835114379084966,
+      "forest_p1": 0.5835114379084966
+    },
+    {
+      "request_id": "R042",
+      "tree_mean_p1": 0.4492583798210734,
+      "forest_p1": 0.4492583798210734
+    },
+    {
+      "request_id": "R045",
+      "tree_mean_p1": 0.13782443957830956,
+      "forest_p1": 0.13782443957830956
+    },
+    {
+      "request_id": "R078",
+      "tree_mean_p1": 0.27900178476494264,
+      "forest_p1": 0.27900178476494264
+    },
+    {
+      "request_id": "R072",
+      "tree_mean_p1": 0.10311575494508927,
+      "forest_p1": 0.10311575494508927
+    },
+    {
+      "request_id": "R100",
+      "tree_mean_p1": 0.2471498364037063,
+      "forest_p1": 0.2471498364037063
+    },
+    {
+      "request_id": "R052",
+      "tree_mean_p1": 0.3641637783441187,
+      "forest_p1": 0.3641637783441187
+    }
+  ]
+}
