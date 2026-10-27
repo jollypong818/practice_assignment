@@ -1,30 +1,255 @@
-"""실습 05: XGBoost도 같은 fit·predict 흐름으로 실행합니다."""
+
+"""실습 05: XGBoost를 이용해 요청 실패 여부를 예측하고 F1 Score로 평가하는 실습"""
+
+
+# ==================================================
+# 1. 필요한 라이브러리 가져오기
+# ==================================================
+
+# 파일과 폴더의 경로를 다루는 파이썬 표준 라이브러리
+# CSV 파일의 위치를 안정적으로 찾기 위해 사용한다.
 from pathlib import Path
+
+# CSV 파일을 읽고 DataFrame(표 형태 데이터)으로 처리하기 위한 라이브러리
 import pandas as pd
+
+# 전체 데이터를 학습용, 검증용, 테스트용으로 나누는 함수
 from sklearn.model_selection import train_test_split
 
-# 제공: 이 파일 옆의 정상 CSV 20건을 읽습니다. 현재 터미널 위치와 무관합니다.
+
+# ==================================================
+# 2. CSV 파일 불러오기
+# ==================================================
+
+# __file__ : 현재 실행 중인 파이썬 파일의 경로
+# resolve() : 해당 경로를 절대경로로 변환
+# parent : 현재 파이썬 파일이 들어 있는 폴더
+#
+# 즉, HERE에는 현재 파이썬 파일이 있는 폴더 경로가 저장된다.
+# 터미널을 어느 위치에서 실행해도 같은 CSV 파일을 읽을 수 있다.
 HERE = Path(__file__).resolve().parent
+
+
+# 현재 파이썬 파일과 같은 폴더에 있는 requests.csv를 읽는다.
+# 읽은 데이터는 pandas의 DataFrame 형태로 raw에 저장된다.
 raw = pd.read_csv(HERE / "requests.csv")
-develop, test = train_test_split(raw, test_size=0.2, stratify=raw["failed"], random_state=42)
-train, valid = train_test_split(develop, test_size=0.25, stratify=develop["failed"], random_state=42)
-# test 4건은 보관만 합니다. 입력은 실행 전에 아는 글자 수입니다.
+
+
+# ==================================================
+# 3. 데이터를 학습용 / 검증용 / 테스트용으로 분리
+# ==================================================
+
+# 전체 데이터를 develop(개발용)과 test(최종 테스트용)로 나눈다.
+#
+# test_size=0.2
+# → 전체 데이터의 20%를 test로 사용한다.
+# → 나머지 80%를 develop에 저장한다.
+#
+# stratify=raw["failed"]
+# → 실패 여부(0과 1)의 비율을 두 데이터셋에서 최대한 비슷하게 유지한다.
+# → 클래스 불균형으로 인해 한쪽에 특정 정답만 몰리는 것을 줄인다.
+#
+# random_state=42
+# → 랜덤 분할 결과를 고정해 실행할 때마다 같은 데이터가 선택되도록 한다.
+develop, test = train_test_split(
+    raw,
+    test_size=0.2,
+    stratify=raw["failed"],
+    random_state=42
+)
+
+
+# develop 데이터를 다시 train과 valid로 분리한다.
+#
+# develop은 전체 데이터의 80%이다.
+# 이 중 25%를 valid로 분리하므로 최종 비율은 다음과 같다.
+#
+# train : 전체의 60% → 모델 학습용
+# valid : 전체의 20% → 모델 성능 검증용
+# test  : 전체의 20% → 최종 성능 평가용
+#
+# 전체 데이터가 20건이므로:
+# train = 12건, valid = 4건, test = 4건
+train, valid = train_test_split(
+    develop,
+    test_size=0.25,
+    stratify=develop["failed"],
+    random_state=42
+)
+
+
+# ==================================================
+# 4. 입력 데이터(X)와 정답 데이터(y) 분리
+# ==================================================
+
+# X는 모델이 예측할 때 참고하는 입력 데이터(Feature)다.
+# 여기서는 요청의 글자 수(input_chars)만 사용한다.
+#
+# [["input_chars"]]처럼 대괄호를 두 번 사용하면
+# 결과가 2차원 DataFrame 형태로 반환된다.
+#
+# X_train : 모델 학습에 사용할 입력 데이터
+# X_valid : 학습하지 않은 검증용 입력 데이터
 X_train = train[["input_chars"]]
 X_valid = valid[["input_chars"]]
+
+
+# y는 모델이 맞혀야 하는 실제 정답(Target)이다.
+#
+# failed = 0 → 요청 성공
+# failed = 1 → 요청 실패
+#
+# y_train : 학습할 때 모델에 알려주는 정답
+# y_valid : 모델의 예측 결과를 평가할 때 사용하는 정답
 y_train = train["failed"]
 y_valid = valid["failed"]
 
+
+# ==================================================
+# 5. XGBoost 모델과 평가 함수 가져오기
+# ==================================================
+
+# XGBClassifier는 XGBoost의 분류 모델이다.
+#
+# XGBoost는 Gradient Boosting 방식의 앙상블 모델이다.
+# 여러 개의 의사결정나무를 순차적으로 추가하면서
+# 이전까지의 모델이 잘 예측하지 못한 부분을 개선한다.
 from xgboost import XGBClassifier
+
+# F1 Score는 Precision(정밀도)과 Recall(재현율)을
+# 함께 고려해 분류 모델의 성능을 평가하는 지표다.
 from sklearn.metrics import f1_score
 
-# 제공: 학습 회차 80·깊이 2·보정 크기 0.05를 고정합니다. CPU로 실행합니다.
-model = XGBClassifier(n_estimators=80, max_depth=2, learning_rate=0.05,
-                      objective="binary:logistic", eval_metric="logloss",
-                      tree_method="hist", random_state=42, n_jobs=1)
-# TODO B05: train으로 학습하고 valid를 예측하세요.
-pass
-prediction = None
-# TODO 끝
+
+# ==================================================
+# 6. XGBoost 모델 생성 및 하이퍼파라미터 설정
+# ==================================================
+
+# n_estimators=80
+# → 부스팅 과정에서 사용할 나무의 개수를 80개로 설정한다.
+# → 여러 나무를 순차적으로 추가하면서 예측 성능을 개선한다.
+#
+# max_depth=2
+# → 각 의사결정나무의 최대 깊이를 2로 제한한다.
+# → 모델이 지나치게 복잡해지는 것을 방지하는 데 도움이 된다.
+#
+# learning_rate=0.05
+# → 새로 추가되는 나무의 기여도를 조절한다.
+# → 값이 작을수록 각 나무가 예측에 반영되는 정도가 작아진다.
+# → 일반적으로 작은 학습률은 더 많은 나무를 필요로 할 수 있다.
+#
+# objective="binary:logistic"
+# → 이진 분류 문제를 학습하도록 설정한다.
+# → 로지스틱 목적함수를 사용해 1에 속할 확률을 모델링한다.
+#
+# eval_metric="logloss"
+# → 로그 손실(Log Loss)을 평가 지표로 설정한다.
+# → 정답에 부여한 예측 확률이 얼마나 적절한지 평가한다.
+# → 값이 작을수록 좋은 지표다.
+# → 아래에서 별도로 계산하는 F1 Score와는 다른 지표다.
+#
+# tree_method="hist"
+# → 입력값을 구간으로 나누는 히스토그램 기반 나무 학습 방식이다.
+# → 효율적으로 분할 지점을 찾기 위해 사용한다.
+#
+# random_state=42
+# → 난수 생성 과정을 고정해 결과의 재현성을 높인다.
+#
+# n_jobs=1
+# → CPU 작업 스레드 수를 1개로 제한한다.
+model = XGBClassifier(
+    n_estimators=80,
+    max_depth=2,
+    learning_rate=0.05,
+    objective="binary:logistic",
+    eval_metric="logloss",
+    tree_method="hist",
+    random_state=42,
+    n_jobs=1
+)
+
+
+# ==================================================
+# 7. 모델 학습 (TODO B05 정답)
+# ==================================================
+
+# fit(X_train, y_train)
+# → 입력 데이터와 실제 정답을 이용해 모델을 학습시킨다.
+#
+# X_train : 입력 글자 수
+# y_train : 각 요청의 실제 실패 여부
+#
+# 학습 과정에서는 여러 나무를 순차적으로 추가하며
+# 실패 여부를 구분하는 예측 규칙을 만들어간다.
+model.fit(X_train, y_train)
+
+
+# ==================================================
+# 8. 검증 데이터 예측 (TODO B05 정답)
+# ==================================================
+
+# predict(X_valid)
+# → 학습된 모델에 검증용 입력 데이터를 전달한다.
+# → 각 요청의 실패 여부를 0 또는 1로 예측한다.
+#
+# valid 데이터는 모델 학습에 사용하지 않았으므로
+# 처음 보는 데이터에 대한 예측 성능을 확인할 수 있다.
+#
+# 예측 결과는 NumPy 배열 형태로 반환된다.
+prediction = model.predict(X_valid)
+
+
+# ==================================================
+# 9. 검증 데이터 예측 결과 출력
+# ==================================================
+
+# prediction.tolist()
+# → NumPy 배열을 파이썬 List 형태로 변환한다.
+#
+# 예:
+# NumPy 배열: array([0, 1, 0, 1])
+# Python List: [0, 1, 0, 1]
+#
+# 실제 결과는 학습 데이터와 모델에 따라 달라진다.
 print("valid 예측:", prediction.tolist())
-print("valid F1:", round(f1_score(y_valid, prediction, zero_division=0), 3))
+
+
+# ==================================================
+# 10. F1 Score 계산
+# ==================================================
+
+# f1_score(y_valid, prediction)
+# → 실제 정답과 모델이 예측한 결과를 비교한다.
+#
+# y_valid : 검증 데이터의 실제 실패 여부
+# prediction : 모델이 예측한 실패 여부
+#
+# F1 Score는 정밀도와 재현율의 조화평균이다.
+# 0~1 범위의 값이며, 1에 가까울수록 좋은 성능이다.
+#
+# zero_division=0
+# → 정밀도나 재현율 계산에서 분모가 0인 경우
+#   해당 값을 0으로 처리한다.
+#
+# round(..., 3)
+# → 계산된 F1 점수를 소수점 셋째 자리까지 반올림한다.
+print(
+    "valid F1:",
+    round(
+        f1_score(
+            y_valid,
+            prediction,
+            zero_division=0
+        ),
+        3
+    )
+)
+
+
+# ==================================================
+# 11. 실습 목적 출력
+# ==================================================
+
+# 이번 모델은 요청 실패 여부를 분류하기 위해 학습했다.
+# 모델의 검증 성능은 F1 Score로 확인한다.
 print("학습 목적: 실패 분류 / 확인 지표: F1")

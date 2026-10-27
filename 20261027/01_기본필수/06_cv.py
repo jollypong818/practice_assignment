@@ -1,28 +1,252 @@
-"""실습 06: train 12건 안에서만 3-fold 교차검증합니다."""
+
+"""실습 06: train 12건 안에서만 3-fold 교차검증을 수행하는 실습"""
+
+
+# ==================================================
+# 1. 필요한 라이브러리 가져오기
+# ==================================================
+
+# 파일 및 폴더 경로를 다루는 파이썬 표준 라이브러리
+# CSV 파일의 위치를 찾는 데 사용한다.
 from pathlib import Path
+
+# CSV 파일을 읽고 DataFrame(표 형태 데이터)으로 다루는 라이브러리
 import pandas as pd
+
+# 전체 데이터를 학습용, 검증용, 테스트용으로 분리하는 함수
 from sklearn.model_selection import train_test_split
 
-# 제공: 이 파일 옆의 정상 CSV 20건을 읽습니다. 현재 터미널 위치와 무관합니다.
+
+# ==================================================
+# 2. CSV 파일 불러오기
+# ==================================================
+
+# __file__ : 현재 실행 중인 파이썬 파일의 경로
+# resolve() : 파일 경로를 절대경로로 변환
+# parent : 현재 파이썬 파일이 들어 있는 폴더
+#
+# 이렇게 하면 터미널의 현재 위치와 관계없이
+# 파이썬 파일과 같은 폴더에 있는 CSV를 읽을 수 있다.
 HERE = Path(__file__).resolve().parent
+
+
+# requests.csv 파일을 읽어 pandas DataFrame으로 변환한다.
+# raw에는 총 20건의 요청 데이터가 저장된다.
 raw = pd.read_csv(HERE / "requests.csv")
-develop, test = train_test_split(raw, test_size=0.2, stratify=raw["failed"], random_state=42)
-train, valid = train_test_split(develop, test_size=0.25, stratify=develop["failed"], random_state=42)
-# test 4건은 보관만 합니다. 입력은 실행 전에 아는 글자 수입니다.
+
+
+# ==================================================
+# 3. 전체 데이터를 train / valid / test로 분리
+# ==================================================
+
+# 첫 번째 데이터 분할
+#
+# 전체 데이터 20건을 다음과 같이 나눈다.
+#
+# develop : 80% = 16건
+# test    : 20% = 4건
+#
+# test_size=0.2
+# → 전체 데이터의 20%를 test로 분리한다.
+#
+# stratify=raw["failed"]
+# → 실패 여부(0과 1)의 비율을 최대한 유지하면서 분리한다.
+#
+# random_state=42
+# → 난수 생성 과정을 고정하여 같은 분할 결과를 재현한다.
+develop, test = train_test_split(
+    raw,
+    test_size=0.2,
+    stratify=raw["failed"],
+    random_state=42
+)
+
+
+# 두 번째 데이터 분할
+#
+# develop 16건 중 25%를 검증용으로 분리한다.
+#
+# train : 12건
+# valid : 4건
+#
+# 최종적으로 전체 데이터는 다음과 같이 나뉜다.
+#
+# train : 60% = 12건
+# valid : 20% = 4건
+# test  : 20% = 4건
+train, valid = train_test_split(
+    develop,
+    test_size=0.25,
+    stratify=develop["failed"],
+    random_state=42
+)
+
+
+# ==================================================
+# 4. 입력 데이터(X)와 정답 데이터(y) 분리
+# ==================================================
+
+# X는 모델에 입력할 특성(Feature)이다.
+# 여기서는 input_chars(요청 글자 수) 하나만 사용한다.
+#
+# [["input_chars"]]처럼 대괄호를 두 번 사용하는 이유는
+# 머신러닝 입력을 2차원 DataFrame으로 만들기 위해서다.
 X_train = train[["input_chars"]]
 X_valid = valid[["input_chars"]]
+
+
+# y는 모델이 맞혀야 하는 정답(Target)이다.
+#
+# failed = 0 → 요청 성공
+# failed = 1 → 요청 실패
+#
+# X_train과 y_train은 교차검증에 사용한다.
+# X_valid와 y_valid는 이번 교차검증에는 사용하지 않는다.
 y_train = train["failed"]
 y_valid = valid["failed"]
 
+
+# ==================================================
+# 5. 머신러닝 모델과 교차검증 함수 가져오기
+# ==================================================
+
+# DecisionTreeClassifier
+# → 조건을 기준으로 데이터를 나누어 분류하는 의사결정나무 모델
 from sklearn.tree import DecisionTreeClassifier
+
+
+# StratifiedKFold
+# → 클래스 비율을 최대한 유지하면서 데이터를 K개로 분할한다.
+#
+# cross_val_score
+# → 교차검증을 자동으로 수행하고 각 평가 점수를 반환한다.
 from sklearn.model_selection import StratifiedKFold, cross_val_score
 
-# 제공: 각 클래스 수를 고려해 기본필수는 3-fold입니다. valid4·test4는 넣지 않습니다.
-folds = StratifiedKFold(n_splits=3, shuffle=True, random_state=42)
-model = DecisionTreeClassifier(max_depth=3, random_state=42)
-# TODO B06: model을 train에서 3-fold F1으로 평가하세요.
-scores = None
-# TODO 끝
+
+# ==================================================
+# 6. 교차검증 분할 방식 설정
+# ==================================================
+
+# n_splits=3
+# → 학습 데이터 12건을 3개 그룹(Fold)으로 나눈다.
+# → 각 Fold는 4건씩 구성된다.
+#
+# shuffle=True
+# → 데이터를 나누기 전에 무작위로 섞는다.
+#
+# random_state=42
+# → 무작위 분할 결과를 재현할 수 있도록 난수를 고정한다.
+#
+# StratifiedKFold는 각 Fold에서 failed=0과 failed=1의
+# 비율이 최대한 비슷하게 유지되도록 분할한다.
+folds = StratifiedKFold(
+    n_splits=3,
+    shuffle=True,
+    random_state=42
+)
+
+
+# ==================================================
+# 7. 의사결정나무 모델 생성
+# ==================================================
+
+# max_depth=3
+# → 의사결정나무의 최대 깊이를 3으로 제한한다.
+# → 너무 복잡한 규칙을 학습하는 것을 어느 정도 방지한다.
+#
+# random_state=42
+# → 모델 내부의 난수 생성 과정을 고정한다.
+#
+# 여기서는 모델 객체만 생성한 상태이며,
+# 아직 학습은 수행하지 않았다.
+model = DecisionTreeClassifier(
+    max_depth=3,
+    random_state=42
+)
+
+
+# ==================================================
+# 8. 3-Fold 교차검증 수행 (TODO B06 정답)
+# ==================================================
+
+# cross_val_score()는 교차검증을 자동으로 수행한다.
+#
+# model
+# → 교차검증에 사용할 머신러닝 모델
+#
+# X_train
+# → 학습 데이터의 입력 특성(글자 수)
+#
+# y_train
+# → 학습 데이터의 실제 정답(실패 여부)
+#
+# cv=folds
+# → 앞에서 설정한 StratifiedKFold 방식으로 3번 평가한다.
+#
+# scoring="f1"
+# → 각 Fold의 평가 지표로 F1 Score를 사용한다.
+# → 기본적으로 클래스 1(실패)을 양성 클래스로 평가한다.
+#
+# 내부적으로 각 Fold마다 새로운 모델을 학습한다.
+# 12건 중 8건으로 학습하고 나머지 4건으로 평가한다.
+# 평가에 사용되는 4건은 매번 달라진다.
+#
+# 반환값은 각 Fold에서 계산한 F1 점수의 NumPy 배열이다.
+#
+# 예: array([0.8, 1.0, 0.5])
+# 실제 결과는 CSV 데이터에 따라 달라진다.
+scores = cross_val_score(
+    model,
+    X_train,
+    y_train,
+    cv=folds,
+    scoring="f1"
+)
+
+
+# ==================================================
+# 9. Fold별 F1 점수 출력
+# ==================================================
+
+# scores.round(3)
+# → 각 F1 점수를 소수점 셋째 자리까지 반올림한다.
+#
+# .tolist()
+# → NumPy 배열을 일반 파이썬 List로 변환한다.
+#
+# Fold별 성능을 비교해 점수 차이가 얼마나 큰지 확인한다.
 print("fold별 F1:", scores.round(3).tolist())
+
+
+# ==================================================
+# 10. 평균 F1 점수 계산
+# ==================================================
+
+# scores.mean()
+# → 3개 Fold의 F1 점수 평균을 계산한다.
+#
+# 평균을 통해 여러 번 평가한 모델의 전반적인 성능을 확인한다.
+#
+# round(..., 3)
+# → 소수점 셋째 자리까지 반올림한다.
 print("평균 F1:", round(scores.mean(), 3))
+
+
+# ==================================================
+# 11. F1 점수의 표준편차 계산
+# ==================================================
+
+# scores.std()
+# → Fold별 F1 점수가 평균에서 얼마나 흩어져 있는지 계산한다.
+#
+# 표준편차가 작다
+# → Fold마다 성능이 비교적 비슷하게 나왔다.
+#
+# 표준편차가 크다
+# → Fold에 따라 모델 성능 차이가 크게 나타났다.
+#
+# NumPy의 std()는 기본적으로 모집단 표준편차(ddof=0)를 계산한다.
+#
+# 단, 데이터가 12건뿐이므로 표준편차만으로
+# 모델이 안정적이라고 단정할 수는 없다.
 print("표준편차:", round(scores.std(), 3))
