@@ -7,7 +7,7 @@ os.environ.setdefault('OMP_NUM_THREADS','1');os.environ.setdefault('OPENBLAS_NUM
 import numpy as np
 import pandas as pd
 ROOT=Path(__file__).resolve().parents[1]
-LEVELS={'basic':'01_기본필수','applied':'02_응용','advanced':'03_심화'}
+LEVELS={'basic':'01_basic','applied':'02_응용','advanced':'03_심화'}
 SKIP={'evaluation_lock.json','evaluation_receipt.json','experiment_plan.json','evaluation_lock.sha256'}
 
 def compare_value(actual,expected,where=''):

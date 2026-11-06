@@ -5,7 +5,7 @@ from pathlib import Path
 import sys,argparse,subprocess,tempfile,json,math,os
 ROOT=Path(__file__).resolve().parents[1]
 NAMES={1:'tree',2:'overfitting',3:'forest',4:'importance',5:'xgboost',6:'cv'}
-LEVELS={'basic':'01_기본필수','applied':'02_응용','advanced':'03_심화'}
+LEVELS={'basic':'01_basic','applied':'02_응용','advanced':'03_심화'}
 
 def differences(a,b,path='root',atol=0.001):
     result=[]

@@ -21,7 +21,7 @@ VS Code에서는 Python: Select Interpreter로 `.venv\Scripts\python.exe`를 선
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
 .venv/bin/python check_env.py
-.venv/bin/python ex01_tree/01_기본필수/main.py
+.venv/bin/python ex01_tree/01_basic/main.py
 ```
 이하 `python`은 선택한 가상환경의 Python을 뜻합니다. Windows/macOS 직접 실행 검증은 하지 않았습니다.
 

@@ -22,12 +22,12 @@ def main():
     for ex in range(1,7):
         for level in ['basic','applied','advanced']:
             run(f'실습{ex:02d}/{level}',['tools/check_exercise.py','--exercise',ex,'--level',level])
-    for lev in ['01_기본필수','02_응용','03_심화']:
+    for lev in ['01_basic','02_응용','03_심화']:
         project=ROOT/'ex07_project'/lev/'day7_ensemble'
         run(f'프로젝트/{lev}',[project/'main.py'])
         run(f'프로젝트 계약12개/{lev}',['-m','unittest','-v','test_project.py'],project)
         run(f'제출검증/{lev}',[ROOT/'ex08_verify'/lev/'verify.py'])
-        if lev!='01_기본필수':run(f'새 프로세스 복원/{lev}',[project/'restore_check.py','--trust-local-models'])
+        if lev!='01_basic':run(f'새 프로세스 복원/{lev}',[project/'restore_check.py','--trust-local-models'])
     if args.include_bonus:run('선택심화 조기종료',[ROOT/'bonus_early_stopping'/'main.py'])
     out=ROOT/'검수_실행결과.json';out.write_text(json.dumps(records,ensure_ascii=False,indent=2),encoding='utf-8')
     failed=sum(r['returncode']!=0 for r in records)
