@@ -1,0 +1,10 @@
+2026-11-10 Day17 FastAPI
+
+먼저 README.md를 읽고 난이도 폴더를 선택하세요.
+기본필수: 01_기본필수/README.md
+응용: 02_응용/README.md
+심화: 03_심화/day17_fastapi/README.md
+특심화: 04_특심화/day17_api_lab/README.md
+
+코드를 python 파일명.py로만 실행하지 말고 README의 Uvicorn 명령을 사용하세요.
+서버는 Ctrl+C로 종료합니다. 모든 앱은 로컬 학습용·메모리 저장소입니다.

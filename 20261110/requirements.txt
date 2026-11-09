@@ -1,0 +1,8 @@
+# 실제 검수 환경의 직접 의존성입니다. Python 3.13 사용.
+fastapi==0.128.2
+starlette==0.50.0
+pydantic==2.13.5
+uvicorn==0.48.0
+jinja2==3.1.6
+httpx==0.28.1
+pytest==9.0.2
