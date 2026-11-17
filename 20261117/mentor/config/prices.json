@@ -1,0 +1,23 @@
+{
+  "version": "classroom-standard-text-2026-11-12",
+  "checked_at": "2026-11-12",
+  "currency": "USD",
+  "service_tier": "default",
+  "scope": "Short text only; no tools/audio/image/batch/priority/regional uplift. Recheck before class.",
+  "source_urls": [
+    "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+    "https://developers.openai.com/api/docs/models/gpt-5.4"
+  ],
+  "models": {
+    "gpt-5.4-mini-2026-03-17": {
+      "input_per_million": "0.75",
+      "cached_input_per_million": "0.075",
+      "output_per_million": "4.50"
+    },
+    "gpt-5.4-2026-03-05": {
+      "input_per_million": "2.50",
+      "cached_input_per_million": "0.25",
+      "output_per_million": "15.00"
+    }
+  }
+}

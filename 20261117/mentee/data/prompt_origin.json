@@ -1,0 +1,10 @@
+{
+  "source": "Day21 teacher checkpoint B (answer_v2)",
+  "label": "제공 정상 시작점이며 개인이 실험으로 선택한 최종 Prompt라고 주장하지 않습니다.",
+  "transport_adaptation": "질문·지식은 input JSON으로 분리하고 고정 지시·실패 기준·출력 계약은 instructions로 이동합니다.",
+  "examples": [],
+  "provided_prompt_version": "day21-checkpoint-B-responses-v1",
+  "knowledge_version": "knowledge_v1",
+  "contract_origin": "Day21 mentor/coursekit/contracts.py 그대로 복사",
+  "knowledge_sha256": "d8dc6b398e8b7e8693d5ea3d62c6b656f24d07a976c7ded475b442866c08e55d"
+}

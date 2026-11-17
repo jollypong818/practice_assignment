@@ -1,0 +1,29 @@
+[
+  {
+    "case_id": "D01",
+    "split": "dev",
+    "question": "파일을 어디에 보관하나요?",
+    "selected_ids": [
+      101
+    ],
+    "expected_behavior": "답변 가능: 개인 폴더"
+  },
+  {
+    "case_id": "D02",
+    "split": "dev",
+    "question": "서버는 어느 폴더에서 실행하나요?",
+    "selected_ids": [
+      102
+    ],
+    "expected_behavior": "답변 가능: 프로젝트 폴더"
+  },
+  {
+    "case_id": "D03",
+    "split": "dev",
+    "question": "파일은 몇 년 보관하나요?",
+    "selected_ids": [
+      101
+    ],
+    "expected_behavior": "정보 부족: 보관 기간"
+  }
+]

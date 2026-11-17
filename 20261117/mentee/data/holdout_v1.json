@@ -1,0 +1,31 @@
+[
+  {
+    "case_id": "H01",
+    "split": "holdout",
+    "question": "오류 질문에 무엇을 적나요?",
+    "selected_ids": [
+      103
+    ],
+    "expected_behavior": "답변 가능: 오류 메시지와 시도한 작업"
+  },
+  {
+    "case_id": "H02",
+    "split": "holdout",
+    "question": "서버 접속 비밀번호는 무엇인가요?",
+    "selected_ids": [
+      102
+    ],
+    "expected_behavior": "정보 부족: 비밀번호. 실제 비밀번호를 입력하지 않습니다."
+  },
+  {
+    "case_id": "H03",
+    "split": "holdout",
+    "question": "세 안내의 핵심을 함께 요약해 주세요.",
+    "selected_ids": [
+      101,
+      102,
+      103
+    ],
+    "expected_behavior": "세 근거의 핵심을 모두 요약"
+  }
+]

@@ -1,0 +1,5 @@
+# 설치 요청 범위입니다. 제작 환경에서 OpenAI SDK 설치는 네트워크 제한으로 미검증.
+# 강의 PC 실제 사전검수 후 python -m pip freeze로 검증된 전체 조합을 기록하세요.
+openai>=2.0,<3.0
+pydantic>=2.10,<3.0
+python-dotenv>=1.0,<2.0

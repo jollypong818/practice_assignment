@@ -1,0 +1,53 @@
+[
+  {
+    "case_id": "C01",
+    "question": "파일은 어디에 보관하나요?",
+    "required": [
+      "보관 위치"
+    ],
+    "supported": {
+      "보관 위치": [
+        101
+      ]
+    },
+    "conflicts": []
+  },
+  {
+    "case_id": "C02",
+    "question": "파일은 몇 년 보관하나요?",
+    "required": [
+      "보관 기간"
+    ],
+    "supported": {},
+    "conflicts": []
+  },
+  {
+    "case_id": "C03",
+    "question": "파일은 어디에, 몇 년 보관하나요?",
+    "required": [
+      "보관 위치",
+      "보관 기간"
+    ],
+    "supported": {
+      "보관 위치": [
+        101
+      ]
+    },
+    "conflicts": []
+  },
+  {
+    "case_id": "C04",
+    "question": "자료의 보관 위치가 서로 다르면?",
+    "required": [
+      "보관 위치"
+    ],
+    "supported": {
+      "보관 위치": [
+        101
+      ]
+    },
+    "conflicts": [
+      "보관 위치"
+    ]
+  }
+]

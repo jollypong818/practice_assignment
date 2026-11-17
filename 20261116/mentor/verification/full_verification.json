@@ -1,0 +1,664 @@
+{
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "compiled_files": 116,
+  "todo_count": 114,
+  "todo_by_level": {
+    "01_basic": 25,
+    "02_intermediate": 39,
+    "03_advanced": 50
+  },
+  "entries": [
+    {
+      "phase": "unfinished_expected_stop",
+      "path": "mentee/01_basic/01_prompt_structure/main.py",
+      "passed": true
+    },
+    {
+      "phase": "unfinished_expected_stop",
+      "path": "mentee/01_basic/02_examples_versions/main.py",
+      "passed": true
+    },
+    {
+      "phase": "unfinished_expected_stop",
+      "path": "mentee/01_basic/03_task_decomposition/main.py",
+      "passed": true
+    },
+    {
+      "phase": "unfinished_expected_stop",
+      "path": "mentee/01_basic/04_context_builder/main.py",
+      "passed": true
+    },
+    {
+      "phase": "unfinished_expected_stop",
+      "path": "mentee/01_basic/05_ab_evaluation/main.py",
+      "passed": true
+    },
+    {
+      "phase": "unfinished_expected_stop",
+      "path": "mentee/01_basic/06_output_validation/main.py",
+      "passed": true
+    },
+    {
+      "phase": "unfinished_expected_stop",
+      "path": "mentee/01_basic/07_bounded_retry/main.py",
+      "passed": true
+    },
+    {
+      "phase": "unfinished_expected_stop",
+      "path": "mentee/01_basic/08_daily_project/main.py",
+      "passed": true
+    },
+    {
+      "phase": "unfinished_expected_stop",
+      "path": "mentee/02_intermediate/01_prompt_structure/main.py",
+      "passed": true
+    },
+    {
+      "phase": "unfinished_expected_stop",
+      "path": "mentee/02_intermediate/02_examples_versions/main.py",
+      "passed": true
+    },
+    {
+      "phase": "unfinished_expected_stop",
+      "path": "mentee/02_intermediate/03_task_decomposition/main.py",
+      "passed": true
+    },
+    {
+      "phase": "unfinished_expected_stop",
+      "path": "mentee/02_intermediate/04_context_builder/main.py",
+      "passed": true
+    },
+    {
+      "phase": "unfinished_expected_stop",
+      "path": "mentee/02_intermediate/05_ab_evaluation/main.py",
+      "passed": true
+    },
+    {
+      "phase": "unfinished_expected_stop",
+      "path": "mentee/02_intermediate/06_output_validation/main.py",
+      "passed": true
+    },
+    {
+      "phase": "unfinished_expected_stop",
+      "path": "mentee/02_intermediate/07_bounded_retry/main.py",
+      "passed": true
+    },
+    {
+      "phase": "unfinished_expected_stop",
+      "path": "mentee/02_intermediate/08_daily_project/main.py",
+      "passed": true
+    },
+    {
+      "phase": "unfinished_expected_stop",
+      "path": "mentee/03_advanced/01_prompt_structure/main.py",
+      "passed": true
+    },
+    {
+      "phase": "unfinished_expected_stop",
+      "path": "mentee/03_advanced/02_examples_versions/main.py",
+      "passed": true
+    },
+    {
+      "phase": "unfinished_expected_stop",
+      "path": "mentee/03_advanced/03_task_decomposition/main.py",
+      "passed": true
+    },
+    {
+      "phase": "unfinished_expected_stop",
+      "path": "mentee/03_advanced/04_context_builder/main.py",
+      "passed": true
+    },
+    {
+      "phase": "unfinished_expected_stop",
+      "path": "mentee/03_advanced/05_ab_evaluation/main.py",
+      "passed": true
+    },
+    {
+      "phase": "unfinished_expected_stop",
+      "path": "mentee/03_advanced/06_output_validation/main.py",
+      "passed": true
+    },
+    {
+      "phase": "unfinished_expected_stop",
+      "path": "mentee/03_advanced/07_bounded_retry/main.py",
+      "passed": true
+    },
+    {
+      "phase": "unfinished_expected_stop",
+      "path": "mentee/03_advanced/08_daily_project/main.py",
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/01_basic/01_prompt_structure/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/01_basic/02_examples_versions/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/01_basic/03_task_decomposition/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/01_basic/04_context_builder/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/01_basic/05_ab_evaluation/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/01_basic/05_ab_evaluation/main.py",
+      "args": [
+        "review"
+      ],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/01_basic/05_ab_evaluation/main.py",
+      "args": [
+        "fixtures"
+      ],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/01_basic/06_output_validation/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/01_basic/07_bounded_retry/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/01_basic/08_daily_project/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/01_basic/08_daily_project/main.py",
+      "args": [
+        "review"
+      ],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/01_basic/08_daily_project/main.py",
+      "args": [
+        "fixtures"
+      ],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/02_intermediate/01_prompt_structure/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/02_intermediate/02_examples_versions/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/02_intermediate/03_task_decomposition/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/02_intermediate/04_context_builder/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/02_intermediate/05_ab_evaluation/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/02_intermediate/05_ab_evaluation/main.py",
+      "args": [
+        "review"
+      ],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/02_intermediate/05_ab_evaluation/main.py",
+      "args": [
+        "fixtures"
+      ],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/02_intermediate/06_output_validation/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/02_intermediate/07_bounded_retry/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/02_intermediate/08_daily_project/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/02_intermediate/08_daily_project/main.py",
+      "args": [
+        "review"
+      ],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/02_intermediate/08_daily_project/main.py",
+      "args": [
+        "fixtures"
+      ],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/03_advanced/01_prompt_structure/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/03_advanced/02_examples_versions/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/03_advanced/03_task_decomposition/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/03_advanced/04_context_builder/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/03_advanced/05_ab_evaluation/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/03_advanced/05_ab_evaluation/main.py",
+      "args": [
+        "review"
+      ],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/03_advanced/05_ab_evaluation/main.py",
+      "args": [
+        "fixtures"
+      ],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/03_advanced/06_output_validation/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/03_advanced/07_bounded_retry/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/03_advanced/08_daily_project/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/03_advanced/08_daily_project/main.py",
+      "args": [
+        "review"
+      ],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentor/03_advanced/08_daily_project/main.py",
+      "args": [
+        "fixtures"
+      ],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/01_basic/01_prompt_structure/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/01_basic/02_examples_versions/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/01_basic/03_task_decomposition/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/01_basic/04_context_builder/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/01_basic/05_ab_evaluation/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/01_basic/05_ab_evaluation/main.py",
+      "args": [
+        "review"
+      ],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/01_basic/05_ab_evaluation/main.py",
+      "args": [
+        "fixtures"
+      ],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/01_basic/06_output_validation/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/01_basic/07_bounded_retry/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/01_basic/08_daily_project/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/01_basic/08_daily_project/main.py",
+      "args": [
+        "review"
+      ],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/01_basic/08_daily_project/main.py",
+      "args": [
+        "fixtures"
+      ],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/02_intermediate/01_prompt_structure/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/02_intermediate/02_examples_versions/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/02_intermediate/03_task_decomposition/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/02_intermediate/04_context_builder/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/02_intermediate/05_ab_evaluation/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/02_intermediate/05_ab_evaluation/main.py",
+      "args": [
+        "review"
+      ],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/02_intermediate/05_ab_evaluation/main.py",
+      "args": [
+        "fixtures"
+      ],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/02_intermediate/06_output_validation/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/02_intermediate/07_bounded_retry/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/02_intermediate/08_daily_project/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/02_intermediate/08_daily_project/main.py",
+      "args": [
+        "review"
+      ],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/02_intermediate/08_daily_project/main.py",
+      "args": [
+        "fixtures"
+      ],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/03_advanced/01_prompt_structure/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/03_advanced/02_examples_versions/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/03_advanced/03_task_decomposition/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/03_advanced/04_context_builder/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/03_advanced/05_ab_evaluation/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/03_advanced/05_ab_evaluation/main.py",
+      "args": [
+        "review"
+      ],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/03_advanced/05_ab_evaluation/main.py",
+      "args": [
+        "fixtures"
+      ],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/03_advanced/06_output_validation/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/03_advanced/07_bounded_retry/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/03_advanced/08_daily_project/main.py",
+      "args": [],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/03_advanced/08_daily_project/main.py",
+      "args": [
+        "review"
+      ],
+      "passed": true
+    },
+    {
+      "phase": "completed_run",
+      "path": "mentee/03_advanced/08_daily_project/main.py",
+      "args": [
+        "fixtures"
+      ],
+      "passed": true
+    },
+    {
+      "phase": "local_pytest",
+      "path": "mentor/03_advanced/04_context_builder/tests",
+      "stdout": "...                                                                      [100%]\n3 passed in 0.04s\n",
+      "passed": true
+    },
+    {
+      "phase": "local_pytest",
+      "path": "mentor/03_advanced/06_output_validation/tests",
+      "stdout": ".............                                                            [100%]\n13 passed in 0.05s\n",
+      "passed": true
+    },
+    {
+      "phase": "local_pytest",
+      "path": "mentor/03_advanced/07_bounded_retry/tests",
+      "stdout": "...                                                                      [100%]\n3 passed in 0.03s\n",
+      "passed": true
+    },
+    {
+      "phase": "local_pytest",
+      "path": "mentor/03_advanced/08_daily_project/tests",
+      "stdout": ".                                                                        [100%]\n1 passed in 0.04s\n",
+      "passed": true
+    },
+    {
+      "phase": "local_pytest",
+      "path": "mentee/03_advanced/04_context_builder/tests",
+      "stdout": "...                                                                      [100%]\n3 passed in 0.04s\n",
+      "passed": true
+    },
+    {
+      "phase": "local_pytest",
+      "path": "mentee/03_advanced/06_output_validation/tests",
+      "stdout": ".............                                                            [100%]\n13 passed in 0.06s\n",
+      "passed": true
+    },
+    {
+      "phase": "local_pytest",
+      "path": "mentee/03_advanced/07_bounded_retry/tests",
+      "stdout": "...                                                                      [100%]\n3 passed in 0.03s\n",
+      "passed": true
+    },
+    {
+      "phase": "local_pytest",
+      "path": "mentee/03_advanced/08_daily_project/tests",
+      "stdout": ".                                                                        [100%]\n1 passed in 0.04s\n",
+      "passed": true
+    }
+  ],
+  "actual_model_runs": 0,
+  "actual_api_calls": 0,
+  "windows_execution_verified": false,
+  "meaning": "임시 복사본에서 코드·샘플·기록 흐름을 검사함. 실제 모델 품질은 미측정."
+}

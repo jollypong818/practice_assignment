@@ -1,0 +1,36 @@
+{
+  "source": "test_http_server_not_actual_prior_fastapi_service",
+  "checks": [
+    {
+      "role": "mentee",
+      "case": "local_test_server_roundtrip_ids_preserved",
+      "passed": true
+    },
+    {
+      "role": "mentee",
+      "case": "existing_snapshot_not_overwritten",
+      "passed": true
+    },
+    {
+      "role": "mentee",
+      "case": "external_url_rejected",
+      "passed": true
+    },
+    {
+      "role": "mentor",
+      "case": "local_test_server_roundtrip_ids_preserved",
+      "passed": true
+    },
+    {
+      "role": "mentor",
+      "case": "existing_snapshot_not_overwritten",
+      "passed": true
+    },
+    {
+      "role": "mentor",
+      "case": "external_url_rejected",
+      "passed": true
+    }
+  ],
+  "live_existing_knowledge_api_tested": false
+}

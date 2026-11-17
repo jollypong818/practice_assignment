@@ -1,0 +1,13 @@
+{
+  "os": "Linux",
+  "python": "3.13.5",
+  "pydantic": "2.13.5",
+  "pytest": "9.0.2",
+  "actual_llm_model_calls": 0,
+  "actual_llm_api_calls": 0,
+  "windows_powershell_tested": false,
+  "new_dependency_install_tested": false,
+  "source_ppt": "Day21_Lecture_20261116.pptx",
+  "source_ppt_sha256": "6cbbe16ffc1c0d526d8df175b17053038fa4e01591fb45ccf1b19e6524ae114f",
+  "scope": "로컬 코드·fixture·수동 관찰 등록/검증/지표 계산을 검사. 실제 모델 A/B 품질은 측정하지 않음."
+}

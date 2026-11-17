@@ -1,0 +1,506 @@
+[
+  {
+    "role": "mentor",
+    "level": "01_basic",
+    "lesson": "01_first_call",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "mentor",
+    "level": "01_basic",
+    "lesson": "02_structured_output",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "mentor",
+    "level": "01_basic",
+    "lesson": "03_streaming",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "mentor",
+    "level": "01_basic",
+    "lesson": "04_errors_retry",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "mentor",
+    "level": "01_basic",
+    "lesson": "05_usage_cost",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "mentor",
+    "level": "01_basic",
+    "lesson": "06_response_cache",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "mentor",
+    "level": "01_basic",
+    "lesson": "07_model_routing",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "mentor",
+    "level": "01_basic",
+    "lesson": "08_daily_project",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "mentor",
+    "level": "02_intermediate",
+    "lesson": "01_first_call",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "mentor",
+    "level": "02_intermediate",
+    "lesson": "02_structured_output",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "mentor",
+    "level": "02_intermediate",
+    "lesson": "03_streaming",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "mentor",
+    "level": "02_intermediate",
+    "lesson": "04_errors_retry",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "mentor",
+    "level": "02_intermediate",
+    "lesson": "05_usage_cost",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "mentor",
+    "level": "02_intermediate",
+    "lesson": "06_response_cache",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "mentor",
+    "level": "02_intermediate",
+    "lesson": "07_model_routing",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "mentor",
+    "level": "02_intermediate",
+    "lesson": "08_daily_project",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "mentor",
+    "level": "03_advanced",
+    "lesson": "01_first_call",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "mentor",
+    "level": "03_advanced",
+    "lesson": "02_structured_output",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "mentor",
+    "level": "03_advanced",
+    "lesson": "03_streaming",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "mentor",
+    "level": "03_advanced",
+    "lesson": "04_errors_retry",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "mentor",
+    "level": "03_advanced",
+    "lesson": "05_usage_cost",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "mentor",
+    "level": "03_advanced",
+    "lesson": "06_response_cache",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "mentor",
+    "level": "03_advanced",
+    "lesson": "07_model_routing",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "mentor",
+    "level": "03_advanced",
+    "lesson": "08_daily_project",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "restored",
+    "level": "01_basic",
+    "lesson": "01_first_call",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "restored",
+    "level": "01_basic",
+    "lesson": "02_structured_output",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "restored",
+    "level": "01_basic",
+    "lesson": "03_streaming",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "restored",
+    "level": "01_basic",
+    "lesson": "04_errors_retry",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "restored",
+    "level": "01_basic",
+    "lesson": "05_usage_cost",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "restored",
+    "level": "01_basic",
+    "lesson": "06_response_cache",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "restored",
+    "level": "01_basic",
+    "lesson": "07_model_routing",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "restored",
+    "level": "01_basic",
+    "lesson": "08_daily_project",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "restored",
+    "level": "02_intermediate",
+    "lesson": "01_first_call",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "restored",
+    "level": "02_intermediate",
+    "lesson": "02_structured_output",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "restored",
+    "level": "02_intermediate",
+    "lesson": "03_streaming",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "restored",
+    "level": "02_intermediate",
+    "lesson": "04_errors_retry",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "restored",
+    "level": "02_intermediate",
+    "lesson": "05_usage_cost",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "restored",
+    "level": "02_intermediate",
+    "lesson": "06_response_cache",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "restored",
+    "level": "02_intermediate",
+    "lesson": "07_model_routing",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "restored",
+    "level": "02_intermediate",
+    "lesson": "08_daily_project",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "restored",
+    "level": "03_advanced",
+    "lesson": "01_first_call",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "restored",
+    "level": "03_advanced",
+    "lesson": "02_structured_output",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "restored",
+    "level": "03_advanced",
+    "lesson": "03_streaming",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "restored",
+    "level": "03_advanced",
+    "lesson": "04_errors_retry",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "restored",
+    "level": "03_advanced",
+    "lesson": "05_usage_cost",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "restored",
+    "level": "03_advanced",
+    "lesson": "06_response_cache",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "restored",
+    "level": "03_advanced",
+    "lesson": "07_model_routing",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "restored",
+    "level": "03_advanced",
+    "lesson": "08_daily_project",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "role": "incomplete",
+    "level": "01_basic",
+    "lesson": "01_first_call",
+    "exit_code": 2,
+    "passed": true
+  },
+  {
+    "role": "incomplete",
+    "level": "01_basic",
+    "lesson": "02_structured_output",
+    "exit_code": 2,
+    "passed": true
+  },
+  {
+    "role": "incomplete",
+    "level": "01_basic",
+    "lesson": "03_streaming",
+    "exit_code": 2,
+    "passed": true
+  },
+  {
+    "role": "incomplete",
+    "level": "01_basic",
+    "lesson": "04_errors_retry",
+    "exit_code": 2,
+    "passed": true
+  },
+  {
+    "role": "incomplete",
+    "level": "01_basic",
+    "lesson": "05_usage_cost",
+    "exit_code": 2,
+    "passed": true
+  },
+  {
+    "role": "incomplete",
+    "level": "01_basic",
+    "lesson": "06_response_cache",
+    "exit_code": 2,
+    "passed": true
+  },
+  {
+    "role": "incomplete",
+    "level": "01_basic",
+    "lesson": "07_model_routing",
+    "exit_code": 2,
+    "passed": true
+  },
+  {
+    "role": "incomplete",
+    "level": "01_basic",
+    "lesson": "08_daily_project",
+    "exit_code": 2,
+    "passed": true
+  },
+  {
+    "role": "incomplete",
+    "level": "02_intermediate",
+    "lesson": "01_first_call",
+    "exit_code": 2,
+    "passed": true
+  },
+  {
+    "role": "incomplete",
+    "level": "02_intermediate",
+    "lesson": "02_structured_output",
+    "exit_code": 2,
+    "passed": true
+  },
+  {
+    "role": "incomplete",
+    "level": "02_intermediate",
+    "lesson": "03_streaming",
+    "exit_code": 2,
+    "passed": true
+  },
+  {
+    "role": "incomplete",
+    "level": "02_intermediate",
+    "lesson": "04_errors_retry",
+    "exit_code": 2,
+    "passed": true
+  },
+  {
+    "role": "incomplete",
+    "level": "02_intermediate",
+    "lesson": "05_usage_cost",
+    "exit_code": 2,
+    "passed": true
+  },
+  {
+    "role": "incomplete",
+    "level": "02_intermediate",
+    "lesson": "06_response_cache",
+    "exit_code": 2,
+    "passed": true
+  },
+  {
+    "role": "incomplete",
+    "level": "02_intermediate",
+    "lesson": "07_model_routing",
+    "exit_code": 2,
+    "passed": true
+  },
+  {
+    "role": "incomplete",
+    "level": "02_intermediate",
+    "lesson": "08_daily_project",
+    "exit_code": 2,
+    "passed": true
+  },
+  {
+    "role": "incomplete",
+    "level": "03_advanced",
+    "lesson": "01_first_call",
+    "exit_code": 2,
+    "passed": true
+  },
+  {
+    "role": "incomplete",
+    "level": "03_advanced",
+    "lesson": "02_structured_output",
+    "exit_code": 2,
+    "passed": true
+  },
+  {
+    "role": "incomplete",
+    "level": "03_advanced",
+    "lesson": "03_streaming",
+    "exit_code": 2,
+    "passed": true
+  },
+  {
+    "role": "incomplete",
+    "level": "03_advanced",
+    "lesson": "04_errors_retry",
+    "exit_code": 2,
+    "passed": true
+  },
+  {
+    "role": "incomplete",
+    "level": "03_advanced",
+    "lesson": "05_usage_cost",
+    "exit_code": 2,
+    "passed": true
+  },
+  {
+    "role": "incomplete",
+    "level": "03_advanced",
+    "lesson": "06_response_cache",
+    "exit_code": 2,
+    "passed": true
+  },
+  {
+    "role": "incomplete",
+    "level": "03_advanced",
+    "lesson": "07_model_routing",
+    "exit_code": 2,
+    "passed": true
+  },
+  {
+    "role": "incomplete",
+    "level": "03_advanced",
+    "lesson": "08_daily_project",
+    "exit_code": 2,
+    "passed": true
+  }
+]

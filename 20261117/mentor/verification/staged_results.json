@@ -1,0 +1,52 @@
+{
+  "workflows": [
+    {
+      "role": "mentor",
+      "level": "01_basic",
+      "workflow": "project-review-cache-hit-change-miss-usage-summary",
+      "passed": true,
+      "real_api_sends": 0
+    },
+    {
+      "role": "mentor",
+      "level": "02_intermediate",
+      "workflow": "project-review-cache-hit-change-miss-usage-summary",
+      "passed": true,
+      "real_api_sends": 0
+    },
+    {
+      "role": "mentor",
+      "level": "03_advanced",
+      "workflow": "project-review-cache-hit-change-miss-usage-summary",
+      "passed": true,
+      "real_api_sends": 0
+    },
+    {
+      "role": "restored",
+      "level": "01_basic",
+      "workflow": "project-review-cache-hit-change-miss-usage-summary",
+      "passed": true,
+      "real_api_sends": 0
+    },
+    {
+      "role": "restored",
+      "level": "02_intermediate",
+      "workflow": "project-review-cache-hit-change-miss-usage-summary",
+      "passed": true,
+      "real_api_sends": 0
+    },
+    {
+      "role": "restored",
+      "level": "03_advanced",
+      "workflow": "project-review-cache-hit-change-miss-usage-summary",
+      "passed": true,
+      "real_api_sends": 0
+    }
+  ],
+  "day21_byte_identical": [
+    "coursekit/contracts.py",
+    "data/knowledge_v1.json",
+    "data/dev_v1.json",
+    "data/holdout_v1.json"
+  ]
+}
