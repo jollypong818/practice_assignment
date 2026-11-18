@@ -1,0 +1,12 @@
+{
+  "exercise": 6,
+  "level": 3,
+  "source_mode": "simulated",
+  "index_sql": "CREATE INDEX IF NOT EXISTS day23_search_docs_hnsw\nON day23_search_docs USING hnsw (embedding vector_cosine_ops)",
+  "explain_sql": "EXPLAIN (ANALYZE, BUFFERS)\n    SELECT id FROM day23_search_docs\n    WHERE embedding_model=%s\n    ORDER BY embedding <=> %s ASC LIMIT 3",
+  "scan_type": "seq",
+  "plan_is_simulated": true,
+  "operator_compatible": true,
+  "example_overlap": 0.6666666666666666,
+  "ann_filtered_example": "review_ann_filter"
+}

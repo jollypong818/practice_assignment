@@ -1,0 +1,141 @@
+{
+  "reference": "Day23 HTML 80 scenes, 8 practices",
+  "runtime": "offline fixture, Python 3.13.5",
+  "checks": {
+    "mentor_fixture_passed": 24,
+    "mentee_todo_blocked": 24,
+    "mentor_todo_total": 112,
+    "mentee_todo_total": 112,
+    "mentor_files_compiled": 65,
+    "mentee_files_compiled": 63,
+    "html_knowledge_snapshot_match": 1,
+    "both_sides_same_knowledge_bytes": 1
+  },
+  "total_verified_exercise_runs": 24,
+  "real_pgvector_build_tested": false,
+  "real_e5_tested": false,
+  "student_todo_exercises_blocked": 24,
+  "knowledge_sha256": "9f1bc305d04796ef8d593d11988e39f8088c71fcb27eda874893fba482f84698",
+  "details": [
+    {
+      "entry": "01_basic/01_knowledge/main.py",
+      "result": "passed",
+      "source_mode": "local_snapshot"
+    },
+    {
+      "entry": "01_basic/02_similarity/main.py",
+      "result": "passed",
+      "source_mode": "local_math"
+    },
+    {
+      "entry": "01_basic/03_e5_embeddings/main.py",
+      "result": "passed",
+      "source_mode": "simulated"
+    },
+    {
+      "entry": "01_basic/04_pgvector_setup/main.py",
+      "result": "passed",
+      "source_mode": "not_run"
+    },
+    {
+      "entry": "01_basic/05_topk_storage/main.py",
+      "result": "passed",
+      "source_mode": "simulated"
+    },
+    {
+      "entry": "01_basic/06_hnsw/main.py",
+      "result": "passed",
+      "source_mode": "simulated"
+    },
+    {
+      "entry": "01_basic/07_relevance/main.py",
+      "result": "passed",
+      "source_mode": "simulated"
+    },
+    {
+      "entry": "01_basic/08_retriever_project/main.py",
+      "result": "passed",
+      "source_mode": "simulated"
+    },
+    {
+      "entry": "02_intermediate/01_knowledge/main.py",
+      "result": "passed",
+      "source_mode": "local_snapshot"
+    },
+    {
+      "entry": "02_intermediate/02_similarity/main.py",
+      "result": "passed",
+      "source_mode": "local_math"
+    },
+    {
+      "entry": "02_intermediate/03_e5_embeddings/main.py",
+      "result": "passed",
+      "source_mode": "simulated"
+    },
+    {
+      "entry": "02_intermediate/04_pgvector_setup/main.py",
+      "result": "passed",
+      "source_mode": "not_run"
+    },
+    {
+      "entry": "02_intermediate/05_topk_storage/main.py",
+      "result": "passed",
+      "source_mode": "simulated"
+    },
+    {
+      "entry": "02_intermediate/06_hnsw/main.py",
+      "result": "passed",
+      "source_mode": "simulated"
+    },
+    {
+      "entry": "02_intermediate/07_relevance/main.py",
+      "result": "passed",
+      "source_mode": "simulated"
+    },
+    {
+      "entry": "02_intermediate/08_retriever_project/main.py",
+      "result": "passed",
+      "source_mode": "simulated"
+    },
+    {
+      "entry": "03_advanced/01_knowledge/main.py",
+      "result": "passed",
+      "source_mode": "local_snapshot"
+    },
+    {
+      "entry": "03_advanced/02_similarity/main.py",
+      "result": "passed",
+      "source_mode": "local_math"
+    },
+    {
+      "entry": "03_advanced/03_e5_embeddings/main.py",
+      "result": "passed",
+      "source_mode": "simulated"
+    },
+    {
+      "entry": "03_advanced/04_pgvector_setup/main.py",
+      "result": "passed",
+      "source_mode": "not_run"
+    },
+    {
+      "entry": "03_advanced/05_topk_storage/main.py",
+      "result": "passed",
+      "source_mode": "simulated"
+    },
+    {
+      "entry": "03_advanced/06_hnsw/main.py",
+      "result": "passed",
+      "source_mode": "simulated"
+    },
+    {
+      "entry": "03_advanced/07_relevance/main.py",
+      "result": "passed",
+      "source_mode": "simulated"
+    },
+    {
+      "entry": "03_advanced/08_retriever_project/main.py",
+      "result": "passed",
+      "source_mode": "simulated"
+    }
+  ]
+}

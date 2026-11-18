@@ -1,0 +1,51 @@
+{
+  "exercise": 8,
+  "level": 3,
+  "source_mode": "simulated",
+  "question": "서버는 어디에서 실행하나요?",
+  "options": {
+    "k": 3,
+    "category": null
+  },
+  "retrieved": [
+    {
+      "id": 102,
+      "title": "서버 실행",
+      "content": "프로젝트 폴더에서 서버를 실행합니다.",
+      "category": "development",
+      "source_version": "knowledge_v1",
+      "distance": 0.0
+    },
+    {
+      "id": 106,
+      "title": "데이터베이스 연결",
+      "content": "PostgreSQL 접속 정보는 로컬 설정 파일에서 읽습니다.",
+      "category": "development",
+      "source_version": "knowledge_search_v2",
+      "distance": 0.001896
+    },
+    {
+      "id": 107,
+      "title": "패키지 설치",
+      "content": "필요한 Python 패키지는 기존 가상환경에 추가합니다.",
+      "category": "development",
+      "source_version": "knowledge_search_v2",
+      "distance": 0.008496
+    }
+  ],
+  "retrieved_count": 3,
+  "human_evidence_ok": null,
+  "next_step": "검토 후 Context 후보로 전달; LLM 답변 생성은 Day25 RAG에서 수행",
+  "run_report": {
+    "run_status": "candidates",
+    "source_mode": "simulated",
+    "retrieved_ids": [
+      102,
+      106,
+      107
+    ],
+    "elapsed_ms": 0.249,
+    "human_evidence_ok": null
+  },
+  "contract_check": "simulated_only"
+}

@@ -1,0 +1,23 @@
+{
+  "exercise": 4,
+  "level": 3,
+  "source_mode": "not_run",
+  "sql_for_pgadmin": {
+    "server": "SELECT version(); SELECT current_database(), current_user;",
+    "extension": "SELECT name, default_version, installed_version FROM pg_available_extensions WHERE name='vector';",
+    "distance": "SELECT '[1,0,0]'::vector <=> '[0,1,0]'::vector AS cosine_distance;"
+  },
+  "db_check": "not_run",
+  "illustrated_extension_state": {
+    "state": "available_not_installed",
+    "version": null
+  },
+  "example_error_stage": "compile",
+  "manual_pending": [
+    "build_tools",
+    "pgroot",
+    "server_files",
+    "db_extension",
+    "python_adapter"
+  ]
+}

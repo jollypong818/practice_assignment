@@ -1,0 +1,48 @@
+# 실습 05 · 원문·벡터 저장과 Top-k — 기본필수
+
+**HTML 대응:** `practice-5` · Embedding · pgvector 강의  5교시
+**핵심 개념:** SQL·Metadata·거리
+**TODO 개수:** 3개 · `main.py`
+
+**HTML의 목표:** 준비한 벡터를 저장하고 SQL로 상위 3건의 ID·원문을 반환합니다.
+
+## TODO 수행 순서
+
+### 1. D23-05-B01 · `schema_sql`
+
+- 기존 knowledge 테이블을 건드리지 않는 day23_search_docs의 CREATE TABLE SQL을 작성하세요.
+- 필드: id(PK),title,content,category,source_version,embedding_model,embedding vector(384).
+- DROP/TRUNCATE를 사용하지 않습니다.
+
+### 2. D23-05-B02 · `prepare_document_rows`
+
+- 지식 101~109의 ID/제목/본문/분류/버전 및 passage 입력을 순서대로 묶으세요.
+- 반환: [{'id', 'passage_input', ...}, ...]. 같은 ID를 새로 만들지 않습니다.
+
+### 3. D23-05-B03 · `topk_sql`
+
+- Cosine distance(<=>) 오름차순, k개 제한 SQL을 작성하세요.
+- SELECT에 id,title,content,category,source_version,embedding_model,distance 포함.
+- E5 외 다른 공간 혼합을 막도록 embedding_model을 필터합니다.
+
+## 실행
+
+```bash
+python main.py --mode fixture
+```
+
+fixture는 흐름 확인용이며 실제 E5 임베딩·PostgreSQL 성공/품질을 의미하지 않습니다.
+
+실제 실행은 필요한 패키지와 선행 단계를 확인한 뒤 `python main.py --mode live`를 사용합니다.
+
+실제 DB 모드는 `main.py` 옆 `.env.example`을 `.env`로 복사해 pgAdmin의 정확한 DB 계정으로 설정합니다.
+
+**실제 DB 준비:** 04에서 vector 확장 활성화 → 05에서 9개 지식 실제 E5 임베딩 저장 → 06~08에서 해당 테이블 검색.
+
+
+## 예상 확인 항목 (정답 코드를 제공하지 않음)
+
+- `outputs/exercise_05.json`이 생성되고 실습 번호·난이도·실행 출처가 구분됩니다.
+- TODO가 미완성이면 `NotImplementedError`가 뜨는 것이 정상입니다.
+- 값이 없는 경우를 성공값으로 임의 생성하거나, 모의 실행을 실측으로 기록하지 않습니다.
+- 실습 목적과 수치 계산의 의미를 자신의 말로 설명합니다.
