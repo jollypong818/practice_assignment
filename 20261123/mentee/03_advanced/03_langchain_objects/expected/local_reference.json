@@ -1,0 +1,45 @@
+{
+  "execution": {
+    "mode": "concept_review",
+    "db": false,
+    "embedding": false,
+    "llm": false
+  },
+  "components": [
+    {
+      "component": "Document",
+      "input": "page_content와 metadata를 담아 생성",
+      "output": "본문·출처를 보관하는 데이터 객체",
+      "access": "data"
+    },
+    {
+      "component": "Retriever",
+      "input": "query·category·candidate_k가 있는 dict",
+      "output": "list[Document]",
+      "access": "invoke"
+    },
+    {
+      "component": "Prompt",
+      "input": "question·context가 있는 dict",
+      "output": "ChatPromptValue",
+      "access": "invoke"
+    },
+    {
+      "component": "Chat Model",
+      "input": "ChatPromptValue 또는 메시지 목록",
+      "output": "AIMessage",
+      "access": "invoke"
+    }
+  ],
+  "observation": "입력·출력 대응표; Prompt·모델 invoke는 실행하지 않음",
+  "document_correction": {
+    "incorrect": "doc.invoke(question)",
+    "correct_read": "doc.page_content",
+    "data_role": "본문과 Metadata를 보관",
+    "generation_role": "Chat Model의 invoke"
+  },
+  "prompt_input": {
+    "question": "15분 늦으면 어떻게 기록되나요?",
+    "context": "[201] attendance_v2.md#sec-1\n수업 시작 후 15분까지 입실하면 지각으로 기록합니다. 15분을 초과하면 결석으로 기록합니다. 단, 사전 승인을 받은 경우에는 운영실에 확인합니다."
+  }
+}

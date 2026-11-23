@@ -1,0 +1,47 @@
+{
+  "documents": {
+    "total": 6,
+    "by_status": {
+      "needs_ocr": 1,
+      "parsed": 4,
+      "unsupported": 1
+    }
+  },
+  "chunks": {
+    "checked": 6,
+    "valid": true,
+    "source_mode": "prepared_only_not_embedded"
+  },
+  "list": [
+    {
+      "doc_id": "DOC-ATTEND",
+      "chunk_id": "640e75daf5e56d9129b4e0a2f15020e11a76027c154771726f3ffca9cee23f14",
+      "source_locator": "attendance.md#sec-1"
+    },
+    {
+      "doc_id": "DOC-ATTEND",
+      "chunk_id": "b4bbf2dad1239db9228bdf162cc02a5bd02d9cb01cd59a716eebd6ed290ecfac",
+      "source_locator": "attendance.md#sec-2"
+    },
+    {
+      "doc_id": "DOC-ASSIGN",
+      "chunk_id": "b93ceb953540cf43889999b26d3c1f483105e450771d9defd6b226a28e38d35b",
+      "source_locator": "assignment.txt"
+    },
+    {
+      "doc_id": "DOC-FACILITY",
+      "chunk_id": "49f53aec89fce586c18c28b3e3bcd100630397890519ddf72aa55505eb8d14a0",
+      "source_locator": "facility.html#main"
+    },
+    {
+      "doc_id": "DOC-CAREER",
+      "chunk_id": "152dbba89fe2d031bd270be082866b0acb08788d45552f0c112cd68fb9cc3851",
+      "source_locator": "career.pdf#page=1"
+    },
+    {
+      "doc_id": "DOC-CAREER",
+      "chunk_id": "6fcef8b516ca2bb9d73609f9629b458ce3313fa0843ed28aaac317d498df1b2b",
+      "source_locator": "career.pdf#page=2"
+    }
+  ]
+}

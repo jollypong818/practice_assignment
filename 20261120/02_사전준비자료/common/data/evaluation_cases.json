@@ -1,0 +1,41 @@
+[
+  {
+    "query": "클래스 가중치 적용",
+    "relevant_ids": [
+      1,
+      137
+    ]
+  },
+  {
+    "query": "결측치 처리",
+    "relevant_ids": [
+      16,
+      91
+    ]
+  },
+  {
+    "query": "RAG 근거 인용",
+    "relevant_ids": [
+      63,
+      131
+    ]
+  },
+  {
+    "query": "개요 Embedding 생성",
+    "relevant_ids": [
+      25,
+      161
+    ]
+  },
+  {
+    "query": "벡터 검색 품질",
+    "relevant_ids": [
+      64,
+      152
+    ]
+  },
+  {
+    "query": "화성의 낙타 전용 미용실",
+    "relevant_ids": []
+  }
+]

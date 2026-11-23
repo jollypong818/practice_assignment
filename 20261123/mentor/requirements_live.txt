@@ -1,0 +1,7 @@
+# 기존 E5/PyTorch 환경이 정상이라면 먼저 설치 여부를 확인하세요.
+-r requirements_llm.txt
+numpy==2.3.5
+psycopg[binary]==3.3.9
+pgvector==0.5.1
+# 실제 모델 다운로드/실행은 수업 PC에서 확인해야 합니다.
+sentence-transformers>=3.0,<7.0

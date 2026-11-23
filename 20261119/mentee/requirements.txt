@@ -1,0 +1,2 @@
+-r requirements_base.txt
+# 실제 DB 연동은 requirements_live.txt를 별도로 확인하여 설치

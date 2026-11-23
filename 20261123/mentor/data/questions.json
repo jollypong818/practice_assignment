@@ -1,0 +1,42 @@
+[
+  {
+    "id": "Q01",
+    "query": "15분 늦으면 어떻게 기록되나요?",
+    "category": "학사",
+    "expected_status": "answered",
+    "expected_doc_id": "DOC-ATTEND",
+    "human_check": "현재 출석 v2: 일반 기준 15분까지 지각, 사전 승인 예외 확인"
+  },
+  {
+    "id": "Q02",
+    "query": "과제 파일은 어디에 보관하나요?",
+    "category": "학사",
+    "expected_status": "answered",
+    "expected_doc_id": "DOC-ASSIGN",
+    "human_check": "DOC-ASSIGN의 개인 폴더"
+  },
+  {
+    "id": "Q03",
+    "query": "내 과제의 정확한 마감 날짜는?",
+    "category": "학사",
+    "expected_status": "insufficient_context",
+    "expected_doc_id": null,
+    "human_check": "insufficient_context. 원문에는 날짜가 없음"
+  },
+  {
+    "id": "Q04",
+    "query": "회의실을 이용하려면 무엇이 필요한가요?",
+    "category": "시설",
+    "expected_status": "answered",
+    "expected_doc_id": "DOC-FACILITY",
+    "human_check": "DOC-FACILITY의 예약 승인"
+  },
+  {
+    "id": "Q05",
+    "query": "이번 주말 날씨는 어떤가요?",
+    "category": "학사",
+    "expected_status": "insufficient_context",
+    "expected_doc_id": null,
+    "human_check": "제공 문서에 근거가 없으므로 정보 부족"
+  }
+]

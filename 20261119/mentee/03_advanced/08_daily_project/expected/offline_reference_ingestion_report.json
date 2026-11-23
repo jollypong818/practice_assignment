@@ -1,0 +1,17 @@
+{
+  "source_mode": "prepared_only_not_embedded",
+  "document_count": 6,
+  "by_status": {
+    "needs_ocr": 1,
+    "parsed": 4,
+    "unsupported": 1
+  },
+  "prepared_chunk_count": 6,
+  "prepared_doc_ids": [
+    "DOC-ASSIGN",
+    "DOC-ATTEND",
+    "DOC-CAREER",
+    "DOC-FACILITY"
+  ],
+  "live": "not_run"
+}

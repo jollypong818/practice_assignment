@@ -1,0 +1,48 @@
+{
+  "execution": {
+    "mode": "concept_review",
+    "db": false,
+    "embedding": false,
+    "llm": false
+  },
+  "stages": [
+    {
+      "stage": "Retriever",
+      "input": "질문·검색 조건",
+      "output": "관련 청크 후보"
+    },
+    {
+      "stage": "Context Builder",
+      "input": "후보 목록",
+      "output": "선택한 근거·포함 ID"
+    },
+    {
+      "stage": "Prompt",
+      "input": "규칙·질문·Context",
+      "output": "모델이 읽을 메시지"
+    },
+    {
+      "stage": "Generator",
+      "input": "모델 입력",
+      "output": "생성된 답변"
+    },
+    {
+      "stage": "Validator · Source 연결",
+      "input": "생성 결과·허용 ID",
+      "output": "검증 결과·원문 위치"
+    }
+  ],
+  "case": {
+    "question": "내 과제의 정확한 마감 날짜는?",
+    "citation_id": 202,
+    "doc_id": "DOC-ASSIGN",
+    "source_version": "v1",
+    "source_locator": "assignment.txt",
+    "evidence": "과제 파일은 개인 폴더에 보관합니다. 제출 기한은 담당자가 공지한 날짜를 따릅니다. 기한 이후 제출 가능 여부는 담당자에게 확인하세요. 답안을 제출하기 전에 파일명을 확인합니다.",
+    "document_found": true,
+    "exact_date_available": false,
+    "expected_status": "insufficient_context",
+    "reason": "문서는 담당자가 공지한 날짜를 따르라고만 안내하며 정확한 날짜는 제공하지 않습니다."
+  },
+  "observation": "예시 문서 선택과 사람이 작성한 정보 부족 판단"
+}

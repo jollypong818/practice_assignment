@@ -1,0 +1,688 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1940 2130" width="1940" height="2130" role="img" aria-label="Report Agent 10개 테이블 전체 컬럼 및 제약조건 ERD">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6795ba" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1940" height="2130" fill="#0b1627" stroke="none" rx="0" stroke-width="1" />
+  <rect x="18" y="17" width="1904" height="92" fill="#13273d" stroke="none" rx="17" stroke-width="1" />
+  <text x="45" y="58" fill="#eef8ff" font-size="30" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">REPORT AGENT  |  전체 ERD</text>
+  <text x="45" y="86" fill="#adc8df" font-size="17" font-weight="normal" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">물리 테이블 10개 · 전체 컬럼 73개 · 자료형 및 제약조건 · FK 삭제 규칙</text>
+  <rect x="18" y="125" width="610" height="1810" fill="#0f2236" stroke="none" rx="13" stroke-width="1" />
+  <rect x="671" y="125" width="625" height="1810" fill="#0d2433" stroke="none" rx="13" stroke-width="1" />
+  <rect x="1298" y="125" width="625" height="1810" fill="#0d2433" stroke="none" rx="13" stroke-width="1" />
+  <path d="M 317 357 L 317 443" stroke="#6795ba" stroke-width="2.5" fill="none" marker-end="url(#arrow)" />
+  <text x="332" y="411" fill="#a7c7e5" font-size="15" font-weight="normal" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">1 : N</text>
+  <path d="M 317 688 L 317 818" stroke="#6795ba" stroke-width="2.5" fill="none" marker-end="url(#arrow)" />
+  <text x="334" y="789" fill="#a7c7e5" font-size="15" font-weight="normal" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">1 : 0..1</text>
+  <path d="M 596 550 L 651 550 L 651 169" stroke="#6795ba" stroke-width="2.5" fill="none" marker-end="url(#arrow)" />
+  <path d="M 651 169 L 651 175 L 690 175" stroke="#6795ba" stroke-width="2.5" fill="none" marker-end="url(#arrow)" />
+  <text x="620" y="163" fill="#a7c7e5" font-size="15" font-weight="normal" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">1 : 0..1</text>
+  <path d="M 651 169 L 651 665 L 690 665" stroke="#6795ba" stroke-width="2.5" fill="none" marker-end="url(#arrow)" />
+  <text x="620" y="653" fill="#a7c7e5" font-size="15" font-weight="normal" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">1 : 0..1</text>
+  <path d="M 651 169 L 651 1155 L 690 1155" stroke="#6795ba" stroke-width="2.5" fill="none" marker-end="url(#arrow)" />
+  <text x="620" y="1143" fill="#a7c7e5" font-size="15" font-weight="normal" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">1 : 0..1</text>
+  <path d="M 596 574 L 618 574 L 618 126 L 1285 126 L 1285 162" stroke="#6795ba" stroke-width="2.5" fill="none" marker-end="url(#arrow)" />
+  <path d="M 1285 162 L 1285 174 L 1318 174" stroke="#6795ba" stroke-width="2.5" fill="none" marker-end="url(#arrow)" />
+  <text x="1255" y="161" fill="#a7c7e5" font-size="15" font-weight="normal" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">1 : 0..1</text>
+  <path d="M 1285 162 L 1285 664 L 1318 664" stroke="#6795ba" stroke-width="2.5" fill="none" marker-end="url(#arrow)" />
+  <text x="1255" y="651" fill="#a7c7e5" font-size="15" font-weight="normal" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">1 : 0..1</text>
+  <path d="M 1285 162 L 1285 1534 L 1318 1534" stroke="#6795ba" stroke-width="2.5" fill="none" marker-end="url(#arrow)" />
+  <text x="1255" y="1521" fill="#a7c7e5" font-size="15" font-weight="normal" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">1 : 0..1</text>
+  <path d="M 1790 971 L 1790 1093" stroke="#6795ba" stroke-width="2.5" fill="none" marker-end="url(#arrow)" />
+  <text x="1803" y="1020" fill="#a7c7e5" font-size="15" font-weight="normal" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">1 : N</text>
+  <rect x="38" y="1237" width="558" height="574" fill="#102f43" stroke="#3d6f86" rx="12" stroke-width="1.5" />
+  <text x="56" y="1277" fill="#c7f4ff" font-size="21" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">도식 읽기</text>
+  <text x="56" y="1320" fill="#e3eef7" font-size="17" font-weight="normal" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">PK  Primary Key (기본키)</text>
+  <text x="56" y="1357" fill="#e3eef7" font-size="17" font-weight="normal" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">FK  Foreign Key (외래키)</text>
+  <text x="56" y="1394" fill="#e3eef7" font-size="17" font-weight="normal" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">UQ  UNIQUE (중복 불가)</text>
+  <text x="56" y="1431" fill="#e3eef7" font-size="17" font-weight="normal" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">NN  NOT NULL (값 필수)</text>
+  <text x="56" y="1468" fill="#e3eef7" font-size="17" font-weight="normal" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">ID  IDENTITY (자동 증가)</text>
+  <text x="56" y="1505" fill="#e3eef7" font-size="17" font-weight="normal" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">DF  DEFAULT (기본값)</text>
+  <text x="56" y="1542" fill="#e3eef7" font-size="17" font-weight="normal" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">CK  CHECK (값 조건)</text>
+  <text x="56" y="1579" fill="#e3eef7" font-size="17" font-weight="normal" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">↳   FK 참조 대상은 각 컬럼 옆에 표시</text>
+  <text x="56" y="1640" fill="#b8f0ed" font-size="17" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">교차 테이블 규칙 (Service + Transaction)</text>
+  <text x="58" y="1675" fill="#d2e7ed" font-size="16" font-weight="normal" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">• 분류에 맞는 상세 행만 1개 생성</text>
+  <text x="58" y="1708" fill="#d2e7ed" font-size="16" font-weight="normal" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">• 활성 Prompt 버전의 존재·본문 일치</text>
+  <text x="58" y="1741" fill="#d2e7ed" font-size="16" font-weight="normal" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">• ready 상태의 개요·해시·벡터 일치</text>
+  <rect x="40" y="150" width="560" height="212" fill="#06101b" stroke="none" rx="10" stroke-width="1" />
+  <rect x="36" y="145" width="560" height="212" fill="#152c3e" stroke="#66899c" rx="9" stroke-width="1.2" />
+  <rect x="37" y="146" width="558" height="46" fill="#24486a" stroke="none" rx="8" stroke-width="1" />
+  <text x="52" y="174" fill="#fcffff" font-size="20" font-weight="bold" font-family="Consolas,DejaVu Sans Mono,monospace">report_categories</text>
+  <text x="584" y="174" fill="#bdd5e2" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace" text-anchor="end">4 columns</text>
+  <rect x="37" y="191" width="558" height="26" fill="#203b4e" stroke="none" rx="0" stroke-width="1" />
+  <text x="51" y="209" fill="#bfd9ed" font-size="14" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">컬럼</text>
+  <text x="250" y="209" fill="#bfd9ed" font-size="14" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">자료형</text>
+  <text x="375" y="209" fill="#bfd9ed" font-size="14" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">제약조건</text>
+  <g>
+    <title>report_categories.category_id: INTEGER; NULL NO; PK; DEFAULT 없음; category_id &gt;= 1; 6개 분류 고정 ID</title>
+    <text x="51" y="238" fill="#ecf4fd" font-size="15" font-weight="bold" font-family="Consolas,DejaVu Sans Mono,monospace">category_id</text>
+    <text x="250" y="238" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">INTEGER</text>
+    <text x="375" y="238" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">PK · NN · CK ≥1</text>
+    <line x1="50" y1="248" x2="584" y2="248" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="38" y="248" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>report_categories.code: TEXT; NULL NO; UQ; DEFAULT 없음; code IN ('EXPERIMENT','DAILY_WORK','RESEARCH_PLAN','DATA_PROCESSING','PROMPT','MEETING'); 분류 코드</title>
+    <text x="51" y="269" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">code</text>
+    <text x="250" y="269" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TEXT</text>
+    <text x="375" y="269" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">UQ · NN · CK 6 codes</text>
+    <line x1="50" y1="279" x2="584" y2="279" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <g>
+    <title>report_categories.name: TEXT; NULL NO; -; DEFAULT 없음; char_length(btrim(name)) &gt;= 1; 분류명</title>
+    <text x="51" y="300" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">name</text>
+    <text x="250" y="300" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TEXT</text>
+    <text x="375" y="300" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK trim≥1</text>
+    <line x1="50" y1="310" x2="584" y2="310" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="38" y="310" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>report_categories.description: TEXT; NULL YES; -; DEFAULT NULL; 없음; 분류 설명</title>
+    <text x="51" y="331" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">description</text>
+    <text x="250" y="331" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TEXT</text>
+    <text x="375" y="331" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace" />
+    <line x1="50" y1="341" x2="584" y2="341" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="40" y="450" width="560" height="243" fill="#06101b" stroke="none" rx="10" stroke-width="1" />
+  <rect x="36" y="445" width="560" height="243" fill="#152c3e" stroke="#66899c" rx="9" stroke-width="1.2" />
+  <rect x="37" y="446" width="558" height="46" fill="#24486a" stroke="none" rx="8" stroke-width="1" />
+  <text x="52" y="474" fill="#fcffff" font-size="20" font-weight="bold" font-family="Consolas,DejaVu Sans Mono,monospace">reports</text>
+  <text x="584" y="474" fill="#bdd5e2" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace" text-anchor="end">5 columns</text>
+  <rect x="37" y="491" width="558" height="26" fill="#203b4e" stroke="none" rx="0" stroke-width="1" />
+  <text x="51" y="509" fill="#bfd9ed" font-size="14" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">컬럼</text>
+  <text x="250" y="509" fill="#bfd9ed" font-size="14" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">자료형</text>
+  <text x="375" y="509" fill="#bfd9ed" font-size="14" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">제약조건</text>
+  <g>
+    <title>reports.report_id: BIGINT; NULL NO; PK; DEFAULT GENERATED BY DEFAULT AS IDENTITY; 없음; 전 종류 공통 식별자</title>
+    <text x="51" y="538" fill="#ecf4fd" font-size="15" font-weight="bold" font-family="Consolas,DejaVu Sans Mono,monospace">report_id</text>
+    <text x="250" y="538" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">BIGINT</text>
+    <text x="375" y="538" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">PK · NN · ID</text>
+    <line x1="50" y1="548" x2="584" y2="548" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="38" y="548" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>reports.category_id: INTEGER; NULL NO; FK → report_categories(category_id); DEFAULT 없음; ON DELETE RESTRICT; 보고서 종류</title>
+    <text x="51" y="569" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">category_id</text>
+    <text x="250" y="569" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">INTEGER</text>
+    <text x="375" y="569" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">FK · NN · RESTRICT</text>
+    <line x1="50" y1="579" x2="584" y2="579" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <g>
+    <title>reports.overview: VARCHAR(1000); NULL NO; -; DEFAULT 없음; char_length(btrim(overview)) BETWEEN 10 AND 1000; 검색용 개요 원문; 벡터 1개</title>
+    <text x="51" y="600" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">overview</text>
+    <text x="250" y="600" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">VARCHAR(1000)</text>
+    <text x="375" y="600" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK 10..1000</text>
+    <line x1="50" y1="610" x2="584" y2="610" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="38" y="610" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>reports.index_status: VARCHAR(20); NULL NO; -; DEFAULT 'pending'; index_status IN ('pending','ready','failed'); 검색 인덱싱 상태</title>
+    <text x="51" y="631" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">index_status</text>
+    <text x="250" y="631" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">VARCHAR(20)</text>
+    <text x="375" y="631" fill="#d6e7f5" font-size="12" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · DF pending · CK status 3</text>
+    <line x1="50" y1="641" x2="584" y2="641" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <g>
+    <title>reports.revision: INTEGER; NULL NO; -; DEFAULT 1; revision &gt;= 1; 보고서 현재 수정 버전</title>
+    <text x="51" y="662" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">revision</text>
+    <text x="250" y="662" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">INTEGER</text>
+    <text x="375" y="662" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · DF 1 · CK ≥1</text>
+    <line x1="50" y1="672" x2="584" y2="672" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="40" y="825" width="560" height="274" fill="#06101b" stroke="none" rx="10" stroke-width="1" />
+  <rect x="36" y="820" width="560" height="274" fill="#152c3e" stroke="#66899c" rx="9" stroke-width="1.2" />
+  <rect x="37" y="821" width="558" height="46" fill="#24486a" stroke="none" rx="8" stroke-width="1" />
+  <text x="52" y="849" fill="#fcffff" font-size="20" font-weight="bold" font-family="Consolas,DejaVu Sans Mono,monospace">report_embeddings</text>
+  <text x="584" y="849" fill="#bdd5e2" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace" text-anchor="end">6 columns</text>
+  <rect x="37" y="866" width="558" height="26" fill="#203b4e" stroke="none" rx="0" stroke-width="1" />
+  <text x="51" y="884" fill="#bfd9ed" font-size="14" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">컬럼</text>
+  <text x="250" y="884" fill="#bfd9ed" font-size="14" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">자료형</text>
+  <text x="375" y="884" fill="#bfd9ed" font-size="14" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">제약조건</text>
+  <g>
+    <title>report_embeddings.report_id: BIGINT; NULL NO; PK·FK → reports(report_id); DEFAULT 없음; ON DELETE CASCADE; 보고서 한 건당 현재 Embedding 최대 한 행</title>
+    <text x="51" y="913" fill="#ecf4fd" font-size="15" font-weight="bold" font-family="Consolas,DejaVu Sans Mono,monospace">report_id</text>
+    <text x="250" y="913" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">BIGINT</text>
+    <text x="375" y="913" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">PK · FK · NN · CASCADE</text>
+    <line x1="50" y1="923" x2="584" y2="923" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="38" y="923" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>report_embeddings.embedding: VECTOR(384); NULL NO; -; DEFAULT 없음; 384차원 강제; E5 실제 Overview Embedding</title>
+    <text x="51" y="944" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">embedding</text>
+    <text x="250" y="944" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">VECTOR(384)</text>
+    <text x="375" y="944" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN</text>
+    <line x1="50" y1="954" x2="584" y2="954" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <g>
+    <title>report_embeddings.model_name: TEXT; NULL NO; -; DEFAULT 없음; char_length(btrim(model_name)) &gt;= 1; 사용 모델</title>
+    <text x="51" y="975" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">model_name</text>
+    <text x="250" y="975" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TEXT</text>
+    <text x="375" y="975" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK trim≥1</text>
+    <line x1="50" y1="985" x2="584" y2="985" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="38" y="985" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>report_embeddings.overview_hash: CHAR(64); NULL NO; -; DEFAULT 없음; overview_hash ~ '^[0-9a-f]{64}$'; 개요 SHA-256</title>
+    <text x="51" y="1006" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">overview_hash</text>
+    <text x="250" y="1006" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">CHAR(64)</text>
+    <text x="375" y="1006" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK sha256 hex</text>
+    <line x1="50" y1="1016" x2="584" y2="1016" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <g>
+    <title>report_embeddings.indexed_revision: INTEGER; NULL NO; -; DEFAULT 없음; indexed_revision &gt;= 1; 이 벡터의 보고서 revision</title>
+    <text x="51" y="1037" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">indexed_revision</text>
+    <text x="250" y="1037" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">INTEGER</text>
+    <text x="375" y="1037" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK ≥1</text>
+    <line x1="50" y1="1047" x2="584" y2="1047" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="38" y="1047" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>report_embeddings.indexed_at: TIMESTAMPTZ; NULL NO; -; DEFAULT NOW(); 없음; 벡터 생성·갱신 시각</title>
+    <text x="51" y="1068" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">indexed_at</text>
+    <text x="250" y="1068" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TIMESTAMPTZ</text>
+    <text x="375" y="1068" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · DF now()</text>
+    <line x1="50" y1="1078" x2="584" y2="1078" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="696" y="150" width="560" height="367" fill="#06101b" stroke="none" rx="10" stroke-width="1" />
+  <rect x="692" y="145" width="560" height="367" fill="#152c3e" stroke="#66899c" rx="9" stroke-width="1.2" />
+  <rect x="693" y="146" width="558" height="46" fill="#20534e" stroke="none" rx="8" stroke-width="1" />
+  <text x="708" y="174" fill="#fcffff" font-size="20" font-weight="bold" font-family="Consolas,DejaVu Sans Mono,monospace">experiment_reports</text>
+  <text x="1240" y="174" fill="#bdd5e2" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace" text-anchor="end">9 columns</text>
+  <rect x="693" y="191" width="558" height="26" fill="#203b4e" stroke="none" rx="0" stroke-width="1" />
+  <text x="707" y="209" fill="#bfd9ed" font-size="14" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">컬럼</text>
+  <text x="906" y="209" fill="#bfd9ed" font-size="14" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">자료형</text>
+  <text x="1031" y="209" fill="#bfd9ed" font-size="14" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">제약조건</text>
+  <g>
+    <title>experiment_reports.report_id: BIGINT; NULL NO; PK·FK → reports(report_id); DEFAULT 없음; ON DELETE CASCADE; 전역 보고서 ID를 PK/FK로 공유</title>
+    <text x="707" y="238" fill="#ecf4fd" font-size="15" font-weight="bold" font-family="Consolas,DejaVu Sans Mono,monospace">report_id</text>
+    <text x="906" y="238" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">BIGINT</text>
+    <text x="1031" y="238" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">PK · FK · NN · CASCADE</text>
+    <line x1="706" y1="248" x2="1240" y2="248" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="694" y="248" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>experiment_reports.title: VARCHAR(200); NULL NO; -; DEFAULT 없음; char_length(btrim(title)) BETWEEN 1 AND 200; 해당 종류 보고서의 제목 원본</title>
+    <text x="707" y="269" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">title</text>
+    <text x="906" y="269" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">VARCHAR(200)</text>
+    <text x="1031" y="269" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK 1..200</text>
+    <line x1="706" y1="279" x2="1240" y2="279" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <g>
+    <title>experiment_reports.content: TEXT; NULL NO; -; DEFAULT 없음; char_length(btrim(content)) BETWEEN 1 AND 20000; 해당 종류 보고서의 본문 원본</title>
+    <text x="707" y="300" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">content</text>
+    <text x="906" y="300" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TEXT</text>
+    <text x="1031" y="300" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK 1..20000</text>
+    <line x1="706" y1="310" x2="1240" y2="310" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="694" y="310" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>experiment_reports.author: VARCHAR(100); NULL NO; -; DEFAULT 없음; char_length(btrim(author)) BETWEEN 1 AND 100; 보고서 작성자</title>
+    <text x="707" y="331" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">author</text>
+    <text x="906" y="331" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">VARCHAR(100)</text>
+    <text x="1031" y="331" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK 1..100</text>
+    <line x1="706" y1="341" x2="1240" y2="341" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <g>
+    <title>experiment_reports.create_at: TIMESTAMPTZ; NULL NO; -; DEFAULT NOW(); 없음; 보고서 생성 시각 (DB 실제 컬럼명)</title>
+    <text x="707" y="362" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">create_at</text>
+    <text x="906" y="362" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TIMESTAMPTZ</text>
+    <text x="1031" y="362" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · DF now()</text>
+    <line x1="706" y1="372" x2="1240" y2="372" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="694" y="372" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>experiment_reports.update_at: TIMESTAMPTZ; NULL NO; -; DEFAULT NOW(); update_at &gt;= create_at; 최종 수정 시각 (DB 실제 컬럼명)</title>
+    <text x="707" y="393" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">update_at</text>
+    <text x="906" y="393" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TIMESTAMPTZ</text>
+    <text x="1031" y="393" fill="#d6e7f5" font-size="12" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · DF now() · CK ≥ create_at</text>
+    <line x1="706" y1="403" x2="1240" y2="403" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <g>
+    <title>experiment_reports.experiment_date: DATE; NULL NO; -; DEFAULT 없음; 유효한 날짜; 실험 수행일</title>
+    <text x="707" y="424" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">experiment_date</text>
+    <text x="906" y="424" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">DATE</text>
+    <text x="1031" y="424" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN</text>
+    <line x1="706" y1="434" x2="1240" y2="434" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="694" y="434" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>experiment_reports.hypothesis: TEXT; NULL NO; -; DEFAULT 없음; char_length(btrim(hypothesis)) &gt;= 1; 검증 가설</title>
+    <text x="707" y="455" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">hypothesis</text>
+    <text x="906" y="455" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TEXT</text>
+    <text x="1031" y="455" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK trim≥1</text>
+    <line x1="706" y1="465" x2="1240" y2="465" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <g>
+    <title>experiment_reports.result_summary: TEXT; NULL NO; -; DEFAULT 없음; char_length(btrim(result_summary)) &gt;= 1; 실험 결과</title>
+    <text x="707" y="486" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">result_summary</text>
+    <text x="906" y="486" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TEXT</text>
+    <text x="1031" y="486" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK trim≥1</text>
+    <line x1="706" y1="496" x2="1240" y2="496" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="696" y="640" width="560" height="367" fill="#06101b" stroke="none" rx="10" stroke-width="1" />
+  <rect x="692" y="635" width="560" height="367" fill="#152c3e" stroke="#66899c" rx="9" stroke-width="1.2" />
+  <rect x="693" y="636" width="558" height="46" fill="#20534e" stroke="none" rx="8" stroke-width="1" />
+  <text x="708" y="664" fill="#fcffff" font-size="20" font-weight="bold" font-family="Consolas,DejaVu Sans Mono,monospace">daily_work_reports</text>
+  <text x="1240" y="664" fill="#bdd5e2" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace" text-anchor="end">9 columns</text>
+  <rect x="693" y="681" width="558" height="26" fill="#203b4e" stroke="none" rx="0" stroke-width="1" />
+  <text x="707" y="699" fill="#bfd9ed" font-size="14" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">컬럼</text>
+  <text x="906" y="699" fill="#bfd9ed" font-size="14" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">자료형</text>
+  <text x="1031" y="699" fill="#bfd9ed" font-size="14" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">제약조건</text>
+  <g>
+    <title>daily_work_reports.report_id: BIGINT; NULL NO; PK·FK → reports(report_id); DEFAULT 없음; ON DELETE CASCADE; 전역 보고서 ID를 PK/FK로 공유</title>
+    <text x="707" y="728" fill="#ecf4fd" font-size="15" font-weight="bold" font-family="Consolas,DejaVu Sans Mono,monospace">report_id</text>
+    <text x="906" y="728" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">BIGINT</text>
+    <text x="1031" y="728" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">PK · FK · NN · CASCADE</text>
+    <line x1="706" y1="738" x2="1240" y2="738" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="694" y="738" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>daily_work_reports.title: VARCHAR(200); NULL NO; -; DEFAULT 없음; char_length(btrim(title)) BETWEEN 1 AND 200; 해당 종류 보고서의 제목 원본</title>
+    <text x="707" y="759" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">title</text>
+    <text x="906" y="759" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">VARCHAR(200)</text>
+    <text x="1031" y="759" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK 1..200</text>
+    <line x1="706" y1="769" x2="1240" y2="769" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <g>
+    <title>daily_work_reports.content: TEXT; NULL NO; -; DEFAULT 없음; char_length(btrim(content)) BETWEEN 1 AND 20000; 해당 종류 보고서의 본문 원본</title>
+    <text x="707" y="790" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">content</text>
+    <text x="906" y="790" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TEXT</text>
+    <text x="1031" y="790" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK 1..20000</text>
+    <line x1="706" y1="800" x2="1240" y2="800" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="694" y="800" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>daily_work_reports.author: VARCHAR(100); NULL NO; -; DEFAULT 없음; char_length(btrim(author)) BETWEEN 1 AND 100; 보고서 작성자</title>
+    <text x="707" y="821" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">author</text>
+    <text x="906" y="821" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">VARCHAR(100)</text>
+    <text x="1031" y="821" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK 1..100</text>
+    <line x1="706" y1="831" x2="1240" y2="831" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <g>
+    <title>daily_work_reports.create_at: TIMESTAMPTZ; NULL NO; -; DEFAULT NOW(); 없음; 보고서 생성 시각 (DB 실제 컬럼명)</title>
+    <text x="707" y="852" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">create_at</text>
+    <text x="906" y="852" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TIMESTAMPTZ</text>
+    <text x="1031" y="852" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · DF now()</text>
+    <line x1="706" y1="862" x2="1240" y2="862" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="694" y="862" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>daily_work_reports.update_at: TIMESTAMPTZ; NULL NO; -; DEFAULT NOW(); update_at &gt;= create_at; 최종 수정 시각 (DB 실제 컬럼명)</title>
+    <text x="707" y="883" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">update_at</text>
+    <text x="906" y="883" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TIMESTAMPTZ</text>
+    <text x="1031" y="883" fill="#d6e7f5" font-size="12" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · DF now() · CK ≥ create_at</text>
+    <line x1="706" y1="893" x2="1240" y2="893" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <g>
+    <title>daily_work_reports.work_date: DATE; NULL NO; -; DEFAULT 없음; 유효한 날짜; 업무일</title>
+    <text x="707" y="914" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">work_date</text>
+    <text x="906" y="914" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">DATE</text>
+    <text x="1031" y="914" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN</text>
+    <line x1="706" y1="924" x2="1240" y2="924" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="694" y="924" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>daily_work_reports.progress: TEXT; NULL NO; -; DEFAULT 없음; char_length(btrim(progress)) &gt;= 1; 진행 내용</title>
+    <text x="707" y="945" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">progress</text>
+    <text x="906" y="945" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TEXT</text>
+    <text x="1031" y="945" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK trim≥1</text>
+    <line x1="706" y1="955" x2="1240" y2="955" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <g>
+    <title>daily_work_reports.blockers: TEXT; NULL NO; -; DEFAULT ''; 빈 문자열 허용; 장애·이슈</title>
+    <text x="707" y="976" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">blockers</text>
+    <text x="906" y="976" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TEXT</text>
+    <text x="1031" y="976" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · DF ''</text>
+    <line x1="706" y1="986" x2="1240" y2="986" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="696" y="1130" width="560" height="367" fill="#06101b" stroke="none" rx="10" stroke-width="1" />
+  <rect x="692" y="1125" width="560" height="367" fill="#152c3e" stroke="#66899c" rx="9" stroke-width="1.2" />
+  <rect x="693" y="1126" width="558" height="46" fill="#20534e" stroke="none" rx="8" stroke-width="1" />
+  <text x="708" y="1154" fill="#fcffff" font-size="20" font-weight="bold" font-family="Consolas,DejaVu Sans Mono,monospace">research_plans</text>
+  <text x="1240" y="1154" fill="#bdd5e2" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace" text-anchor="end">9 columns</text>
+  <rect x="693" y="1171" width="558" height="26" fill="#203b4e" stroke="none" rx="0" stroke-width="1" />
+  <text x="707" y="1189" fill="#bfd9ed" font-size="14" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">컬럼</text>
+  <text x="906" y="1189" fill="#bfd9ed" font-size="14" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">자료형</text>
+  <text x="1031" y="1189" fill="#bfd9ed" font-size="14" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">제약조건</text>
+  <g>
+    <title>research_plans.report_id: BIGINT; NULL NO; PK·FK → reports(report_id); DEFAULT 없음; ON DELETE CASCADE; 전역 보고서 ID를 PK/FK로 공유</title>
+    <text x="707" y="1218" fill="#ecf4fd" font-size="15" font-weight="bold" font-family="Consolas,DejaVu Sans Mono,monospace">report_id</text>
+    <text x="906" y="1218" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">BIGINT</text>
+    <text x="1031" y="1218" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">PK · FK · NN · CASCADE</text>
+    <line x1="706" y1="1228" x2="1240" y2="1228" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="694" y="1228" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>research_plans.title: VARCHAR(200); NULL NO; -; DEFAULT 없음; char_length(btrim(title)) BETWEEN 1 AND 200; 해당 종류 보고서의 제목 원본</title>
+    <text x="707" y="1249" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">title</text>
+    <text x="906" y="1249" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">VARCHAR(200)</text>
+    <text x="1031" y="1249" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK 1..200</text>
+    <line x1="706" y1="1259" x2="1240" y2="1259" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <g>
+    <title>research_plans.content: TEXT; NULL NO; -; DEFAULT 없음; char_length(btrim(content)) BETWEEN 1 AND 20000; 해당 종류 보고서의 본문 원본</title>
+    <text x="707" y="1280" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">content</text>
+    <text x="906" y="1280" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TEXT</text>
+    <text x="1031" y="1280" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK 1..20000</text>
+    <line x1="706" y1="1290" x2="1240" y2="1290" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="694" y="1290" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>research_plans.author: VARCHAR(100); NULL NO; -; DEFAULT 없음; char_length(btrim(author)) BETWEEN 1 AND 100; 보고서 작성자</title>
+    <text x="707" y="1311" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">author</text>
+    <text x="906" y="1311" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">VARCHAR(100)</text>
+    <text x="1031" y="1311" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK 1..100</text>
+    <line x1="706" y1="1321" x2="1240" y2="1321" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <g>
+    <title>research_plans.create_at: TIMESTAMPTZ; NULL NO; -; DEFAULT NOW(); 없음; 보고서 생성 시각 (DB 실제 컬럼명)</title>
+    <text x="707" y="1342" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">create_at</text>
+    <text x="906" y="1342" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TIMESTAMPTZ</text>
+    <text x="1031" y="1342" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · DF now()</text>
+    <line x1="706" y1="1352" x2="1240" y2="1352" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="694" y="1352" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>research_plans.update_at: TIMESTAMPTZ; NULL NO; -; DEFAULT NOW(); update_at &gt;= create_at; 최종 수정 시각 (DB 실제 컬럼명)</title>
+    <text x="707" y="1373" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">update_at</text>
+    <text x="906" y="1373" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TIMESTAMPTZ</text>
+    <text x="1031" y="1373" fill="#d6e7f5" font-size="12" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · DF now() · CK ≥ create_at</text>
+    <line x1="706" y1="1383" x2="1240" y2="1383" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <g>
+    <title>research_plans.research_goal: TEXT; NULL NO; -; DEFAULT 없음; char_length(btrim(research_goal)) &gt;= 1; 연구 목표</title>
+    <text x="707" y="1404" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">research_goal</text>
+    <text x="906" y="1404" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TEXT</text>
+    <text x="1031" y="1404" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK trim≥1</text>
+    <line x1="706" y1="1414" x2="1240" y2="1414" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="694" y="1414" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>research_plans.methodology: TEXT; NULL NO; -; DEFAULT 없음; char_length(btrim(methodology)) &gt;= 1; 연구 방법</title>
+    <text x="707" y="1435" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">methodology</text>
+    <text x="906" y="1435" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TEXT</text>
+    <text x="1031" y="1435" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK trim≥1</text>
+    <line x1="706" y1="1445" x2="1240" y2="1445" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <g>
+    <title>research_plans.target_date: DATE; NULL NO; -; DEFAULT 없음; 유효한 날짜; 목표 완료일</title>
+    <text x="707" y="1466" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">target_date</text>
+    <text x="906" y="1466" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">DATE</text>
+    <text x="1031" y="1466" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN</text>
+    <line x1="706" y1="1476" x2="1240" y2="1476" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="1324" y="150" width="560" height="367" fill="#06101b" stroke="none" rx="10" stroke-width="1" />
+  <rect x="1320" y="145" width="560" height="367" fill="#152c3e" stroke="#66899c" rx="9" stroke-width="1.2" />
+  <rect x="1321" y="146" width="558" height="46" fill="#20534e" stroke="none" rx="8" stroke-width="1" />
+  <text x="1336" y="174" fill="#fcffff" font-size="20" font-weight="bold" font-family="Consolas,DejaVu Sans Mono,monospace">data_processing_reports</text>
+  <text x="1868" y="174" fill="#bdd5e2" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace" text-anchor="end">9 columns</text>
+  <rect x="1321" y="191" width="558" height="26" fill="#203b4e" stroke="none" rx="0" stroke-width="1" />
+  <text x="1335" y="209" fill="#bfd9ed" font-size="14" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">컬럼</text>
+  <text x="1534" y="209" fill="#bfd9ed" font-size="14" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">자료형</text>
+  <text x="1659" y="209" fill="#bfd9ed" font-size="14" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">제약조건</text>
+  <g>
+    <title>data_processing_reports.report_id: BIGINT; NULL NO; PK·FK → reports(report_id); DEFAULT 없음; ON DELETE CASCADE; 전역 보고서 ID를 PK/FK로 공유</title>
+    <text x="1335" y="238" fill="#ecf4fd" font-size="15" font-weight="bold" font-family="Consolas,DejaVu Sans Mono,monospace">report_id</text>
+    <text x="1534" y="238" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">BIGINT</text>
+    <text x="1659" y="238" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">PK · FK · NN · CASCADE</text>
+    <line x1="1334" y1="248" x2="1868" y2="248" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="1322" y="248" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>data_processing_reports.title: VARCHAR(200); NULL NO; -; DEFAULT 없음; char_length(btrim(title)) BETWEEN 1 AND 200; 해당 종류 보고서의 제목 원본</title>
+    <text x="1335" y="269" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">title</text>
+    <text x="1534" y="269" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">VARCHAR(200)</text>
+    <text x="1659" y="269" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK 1..200</text>
+    <line x1="1334" y1="279" x2="1868" y2="279" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <g>
+    <title>data_processing_reports.content: TEXT; NULL NO; -; DEFAULT 없음; char_length(btrim(content)) BETWEEN 1 AND 20000; 해당 종류 보고서의 본문 원본</title>
+    <text x="1335" y="300" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">content</text>
+    <text x="1534" y="300" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TEXT</text>
+    <text x="1659" y="300" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK 1..20000</text>
+    <line x1="1334" y1="310" x2="1868" y2="310" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="1322" y="310" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>data_processing_reports.author: VARCHAR(100); NULL NO; -; DEFAULT 없음; char_length(btrim(author)) BETWEEN 1 AND 100; 보고서 작성자</title>
+    <text x="1335" y="331" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">author</text>
+    <text x="1534" y="331" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">VARCHAR(100)</text>
+    <text x="1659" y="331" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK 1..100</text>
+    <line x1="1334" y1="341" x2="1868" y2="341" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <g>
+    <title>data_processing_reports.create_at: TIMESTAMPTZ; NULL NO; -; DEFAULT NOW(); 없음; 보고서 생성 시각 (DB 실제 컬럼명)</title>
+    <text x="1335" y="362" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">create_at</text>
+    <text x="1534" y="362" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TIMESTAMPTZ</text>
+    <text x="1659" y="362" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · DF now()</text>
+    <line x1="1334" y1="372" x2="1868" y2="372" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="1322" y="372" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>data_processing_reports.update_at: TIMESTAMPTZ; NULL NO; -; DEFAULT NOW(); update_at &gt;= create_at; 최종 수정 시각 (DB 실제 컬럼명)</title>
+    <text x="1335" y="393" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">update_at</text>
+    <text x="1534" y="393" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TIMESTAMPTZ</text>
+    <text x="1659" y="393" fill="#d6e7f5" font-size="12" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · DF now() · CK ≥ create_at</text>
+    <line x1="1334" y1="403" x2="1868" y2="403" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <g>
+    <title>data_processing_reports.dataset_name: TEXT; NULL NO; -; DEFAULT 없음; char_length(btrim(dataset_name)) &gt;= 1; 데이터셋명</title>
+    <text x="1335" y="424" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">dataset_name</text>
+    <text x="1534" y="424" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TEXT</text>
+    <text x="1659" y="424" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK trim≥1</text>
+    <line x1="1334" y1="434" x2="1868" y2="434" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="1322" y="434" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>data_processing_reports.processing_steps: TEXT; NULL NO; -; DEFAULT 없음; char_length(btrim(processing_steps)) &gt;= 1; 처리 절차</title>
+    <text x="1335" y="455" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">processing_steps</text>
+    <text x="1534" y="455" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TEXT</text>
+    <text x="1659" y="455" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK trim≥1</text>
+    <line x1="1334" y1="465" x2="1868" y2="465" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <g>
+    <title>data_processing_reports.quality_notes: TEXT; NULL NO; -; DEFAULT ''; 빈 문자열 허용; 품질 비고</title>
+    <text x="1335" y="486" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">quality_notes</text>
+    <text x="1534" y="486" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TEXT</text>
+    <text x="1659" y="486" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · DF ''</text>
+    <line x1="1334" y1="496" x2="1868" y2="496" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="1324" y="640" width="560" height="336" fill="#06101b" stroke="none" rx="10" stroke-width="1" />
+  <rect x="1320" y="635" width="560" height="336" fill="#152c3e" stroke="#66899c" rx="9" stroke-width="1.2" />
+  <rect x="1321" y="636" width="558" height="46" fill="#20534e" stroke="none" rx="8" stroke-width="1" />
+  <text x="1336" y="664" fill="#fcffff" font-size="20" font-weight="bold" font-family="Consolas,DejaVu Sans Mono,monospace">prompt_reports</text>
+  <text x="1868" y="664" fill="#bdd5e2" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace" text-anchor="end">8 columns</text>
+  <rect x="1321" y="681" width="558" height="26" fill="#203b4e" stroke="none" rx="0" stroke-width="1" />
+  <text x="1335" y="699" fill="#bfd9ed" font-size="14" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">컬럼</text>
+  <text x="1534" y="699" fill="#bfd9ed" font-size="14" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">자료형</text>
+  <text x="1659" y="699" fill="#bfd9ed" font-size="14" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">제약조건</text>
+  <g>
+    <title>prompt_reports.report_id: BIGINT; NULL NO; PK·FK → reports(report_id); DEFAULT 없음; ON DELETE CASCADE; 전역 보고서 ID를 PK/FK로 공유</title>
+    <text x="1335" y="728" fill="#ecf4fd" font-size="15" font-weight="bold" font-family="Consolas,DejaVu Sans Mono,monospace">report_id</text>
+    <text x="1534" y="728" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">BIGINT</text>
+    <text x="1659" y="728" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">PK · FK · NN · CASCADE</text>
+    <line x1="1334" y1="738" x2="1868" y2="738" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="1322" y="738" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>prompt_reports.title: VARCHAR(200); NULL NO; -; DEFAULT 없음; char_length(btrim(title)) BETWEEN 1 AND 200; 해당 종류 보고서의 제목 원본</title>
+    <text x="1335" y="759" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">title</text>
+    <text x="1534" y="759" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">VARCHAR(200)</text>
+    <text x="1659" y="759" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK 1..200</text>
+    <line x1="1334" y1="769" x2="1868" y2="769" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <g>
+    <title>prompt_reports.content: TEXT; NULL NO; -; DEFAULT 없음; char_length(btrim(content)) BETWEEN 1 AND 20000; 해당 종류 보고서의 본문 원본</title>
+    <text x="1335" y="790" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">content</text>
+    <text x="1534" y="790" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TEXT</text>
+    <text x="1659" y="790" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK 1..20000</text>
+    <line x1="1334" y1="800" x2="1868" y2="800" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="1322" y="800" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>prompt_reports.author: VARCHAR(100); NULL NO; -; DEFAULT 없음; char_length(btrim(author)) BETWEEN 1 AND 100; 보고서 작성자</title>
+    <text x="1335" y="821" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">author</text>
+    <text x="1534" y="821" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">VARCHAR(100)</text>
+    <text x="1659" y="821" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK 1..100</text>
+    <line x1="1334" y1="831" x2="1868" y2="831" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <g>
+    <title>prompt_reports.create_at: TIMESTAMPTZ; NULL NO; -; DEFAULT NOW(); 없음; 보고서 생성 시각 (DB 실제 컬럼명)</title>
+    <text x="1335" y="852" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">create_at</text>
+    <text x="1534" y="852" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TIMESTAMPTZ</text>
+    <text x="1659" y="852" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · DF now()</text>
+    <line x1="1334" y1="862" x2="1868" y2="862" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="1322" y="862" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>prompt_reports.update_at: TIMESTAMPTZ; NULL NO; -; DEFAULT NOW(); update_at &gt;= create_at; 최종 수정 시각 (DB 실제 컬럼명)</title>
+    <text x="1335" y="883" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">update_at</text>
+    <text x="1534" y="883" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TIMESTAMPTZ</text>
+    <text x="1659" y="883" fill="#d6e7f5" font-size="12" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · DF now() · CK ≥ create_at</text>
+    <line x1="1334" y1="893" x2="1868" y2="893" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <g>
+    <title>prompt_reports.purpose: TEXT; NULL NO; -; DEFAULT 없음; char_length(btrim(purpose)) &gt;= 1; Prompt 목적</title>
+    <text x="1335" y="914" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">purpose</text>
+    <text x="1534" y="914" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TEXT</text>
+    <text x="1659" y="914" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK trim≥1</text>
+    <line x1="1334" y1="924" x2="1868" y2="924" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="1322" y="924" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>prompt_reports.active_version_no: INTEGER; NULL NO; -; DEFAULT 1; active_version_no &gt;= 1; 활성 버전 번호</title>
+    <text x="1335" y="945" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">active_version_no</text>
+    <text x="1534" y="945" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">INTEGER</text>
+    <text x="1659" y="945" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · DF 1 · CK ≥1</text>
+    <line x1="1334" y1="955" x2="1868" y2="955" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="1324" y="1100" width="560" height="243" fill="#06101b" stroke="none" rx="10" stroke-width="1" />
+  <rect x="1320" y="1095" width="560" height="243" fill="#152c3e" stroke="#66899c" rx="9" stroke-width="1.2" />
+  <rect x="1321" y="1096" width="558" height="46" fill="#584579" stroke="none" rx="8" stroke-width="1" />
+  <text x="1336" y="1124" fill="#fcffff" font-size="20" font-weight="bold" font-family="Consolas,DejaVu Sans Mono,monospace">prompt_versions</text>
+  <text x="1868" y="1124" fill="#bdd5e2" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace" text-anchor="end">5 columns</text>
+  <rect x="1321" y="1141" width="558" height="26" fill="#203b4e" stroke="none" rx="0" stroke-width="1" />
+  <text x="1335" y="1159" fill="#bfd9ed" font-size="14" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">컬럼</text>
+  <text x="1534" y="1159" fill="#bfd9ed" font-size="14" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">자료형</text>
+  <text x="1659" y="1159" fill="#bfd9ed" font-size="14" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">제약조건</text>
+  <g>
+    <title>prompt_versions.prompt_version_id: BIGINT; NULL NO; PK; DEFAULT GENERATED BY DEFAULT AS IDENTITY; 없음; 버전 고유 ID</title>
+    <text x="1335" y="1188" fill="#ecf4fd" font-size="15" font-weight="bold" font-family="Consolas,DejaVu Sans Mono,monospace">prompt_version_id</text>
+    <text x="1534" y="1188" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">BIGINT</text>
+    <text x="1659" y="1188" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">PK · NN · ID</text>
+    <line x1="1334" y1="1198" x2="1868" y2="1198" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="1322" y="1198" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>prompt_versions.report_id: BIGINT; NULL NO; FK → prompt_reports(report_id); DEFAULT 없음; ON DELETE CASCADE; Prompt 보고서 ID</title>
+    <text x="1335" y="1219" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">report_id</text>
+    <text x="1534" y="1219" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">BIGINT</text>
+    <text x="1659" y="1219" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">FK · NN · CASCADE</text>
+    <line x1="1334" y1="1229" x2="1868" y2="1229" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <g>
+    <title>prompt_versions.version_no: INTEGER; NULL NO; UQ(report_id,version_no); DEFAULT 없음; version_no &gt;= 1; 보고서 내 버전 번호</title>
+    <text x="1335" y="1250" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">version_no</text>
+    <text x="1534" y="1250" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">INTEGER</text>
+    <text x="1659" y="1250" fill="#d6e7f5" font-size="12" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK ≥1 · UQ with report_id</text>
+    <line x1="1334" y1="1260" x2="1868" y2="1260" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="1322" y="1260" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>prompt_versions.prompt_text: TEXT; NULL NO; -; DEFAULT 없음; char_length(btrim(prompt_text)) BETWEEN 1 AND 20000; 버전별 불변 Prompt 원문</title>
+    <text x="1335" y="1281" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">prompt_text</text>
+    <text x="1534" y="1281" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TEXT</text>
+    <text x="1659" y="1281" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK 1..20000</text>
+    <line x1="1334" y1="1291" x2="1868" y2="1291" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <g>
+    <title>prompt_versions.created_at: TIMESTAMPTZ; NULL NO; -; DEFAULT NOW(); 없음; 버전 등록 시각</title>
+    <text x="1335" y="1312" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">created_at</text>
+    <text x="1534" y="1312" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TIMESTAMPTZ</text>
+    <text x="1659" y="1312" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · DF now()</text>
+    <line x1="1334" y1="1322" x2="1868" y2="1322" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="1324" y="1510" width="560" height="367" fill="#06101b" stroke="none" rx="10" stroke-width="1" />
+  <rect x="1320" y="1505" width="560" height="367" fill="#152c3e" stroke="#66899c" rx="9" stroke-width="1.2" />
+  <rect x="1321" y="1506" width="558" height="46" fill="#20534e" stroke="none" rx="8" stroke-width="1" />
+  <text x="1336" y="1534" fill="#fcffff" font-size="20" font-weight="bold" font-family="Consolas,DejaVu Sans Mono,monospace">meeting_minutes</text>
+  <text x="1868" y="1534" fill="#bdd5e2" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace" text-anchor="end">9 columns</text>
+  <rect x="1321" y="1551" width="558" height="26" fill="#203b4e" stroke="none" rx="0" stroke-width="1" />
+  <text x="1335" y="1569" fill="#bfd9ed" font-size="14" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">컬럼</text>
+  <text x="1534" y="1569" fill="#bfd9ed" font-size="14" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">자료형</text>
+  <text x="1659" y="1569" fill="#bfd9ed" font-size="14" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">제약조건</text>
+  <g>
+    <title>meeting_minutes.report_id: BIGINT; NULL NO; PK·FK → reports(report_id); DEFAULT 없음; ON DELETE CASCADE; 전역 보고서 ID를 PK/FK로 공유</title>
+    <text x="1335" y="1598" fill="#ecf4fd" font-size="15" font-weight="bold" font-family="Consolas,DejaVu Sans Mono,monospace">report_id</text>
+    <text x="1534" y="1598" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">BIGINT</text>
+    <text x="1659" y="1598" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">PK · FK · NN · CASCADE</text>
+    <line x1="1334" y1="1608" x2="1868" y2="1608" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="1322" y="1608" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>meeting_minutes.title: VARCHAR(200); NULL NO; -; DEFAULT 없음; char_length(btrim(title)) BETWEEN 1 AND 200; 해당 종류 보고서의 제목 원본</title>
+    <text x="1335" y="1629" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">title</text>
+    <text x="1534" y="1629" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">VARCHAR(200)</text>
+    <text x="1659" y="1629" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK 1..200</text>
+    <line x1="1334" y1="1639" x2="1868" y2="1639" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <g>
+    <title>meeting_minutes.content: TEXT; NULL NO; -; DEFAULT 없음; char_length(btrim(content)) BETWEEN 1 AND 20000; 해당 종류 보고서의 본문 원본</title>
+    <text x="1335" y="1660" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">content</text>
+    <text x="1534" y="1660" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TEXT</text>
+    <text x="1659" y="1660" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK 1..20000</text>
+    <line x1="1334" y1="1670" x2="1868" y2="1670" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="1322" y="1670" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>meeting_minutes.author: VARCHAR(100); NULL NO; -; DEFAULT 없음; char_length(btrim(author)) BETWEEN 1 AND 100; 보고서 작성자</title>
+    <text x="1335" y="1691" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">author</text>
+    <text x="1534" y="1691" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">VARCHAR(100)</text>
+    <text x="1659" y="1691" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK 1..100</text>
+    <line x1="1334" y1="1701" x2="1868" y2="1701" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <g>
+    <title>meeting_minutes.create_at: TIMESTAMPTZ; NULL NO; -; DEFAULT NOW(); 없음; 보고서 생성 시각 (DB 실제 컬럼명)</title>
+    <text x="1335" y="1722" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">create_at</text>
+    <text x="1534" y="1722" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TIMESTAMPTZ</text>
+    <text x="1659" y="1722" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · DF now()</text>
+    <line x1="1334" y1="1732" x2="1868" y2="1732" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="1322" y="1732" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>meeting_minutes.update_at: TIMESTAMPTZ; NULL NO; -; DEFAULT NOW(); update_at &gt;= create_at; 최종 수정 시각 (DB 실제 컬럼명)</title>
+    <text x="1335" y="1753" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">update_at</text>
+    <text x="1534" y="1753" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TIMESTAMPTZ</text>
+    <text x="1659" y="1753" fill="#d6e7f5" font-size="12" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · DF now() · CK ≥ create_at</text>
+    <line x1="1334" y1="1763" x2="1868" y2="1763" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <g>
+    <title>meeting_minutes.meeting_at: TIMESTAMPTZ; NULL NO; -; DEFAULT 없음; 유효한 시각; 회의 시각</title>
+    <text x="1335" y="1784" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">meeting_at</text>
+    <text x="1534" y="1784" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TIMESTAMPTZ</text>
+    <text x="1659" y="1784" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN</text>
+    <line x1="1334" y1="1794" x2="1868" y2="1794" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="1322" y="1794" width="556" height="31" fill="#193445" stroke="none" rx="0" stroke-width="1" />
+  <g>
+    <title>meeting_minutes.attendees: TEXT; NULL NO; -; DEFAULT 없음; char_length(btrim(attendees)) &gt;= 1; 참석자 목록</title>
+    <text x="1335" y="1815" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">attendees</text>
+    <text x="1534" y="1815" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TEXT</text>
+    <text x="1659" y="1815" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK trim≥1</text>
+    <line x1="1334" y1="1825" x2="1868" y2="1825" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <g>
+    <title>meeting_minutes.decisions: TEXT; NULL NO; -; DEFAULT 없음; char_length(btrim(decisions)) &gt;= 1; 결정 사항</title>
+    <text x="1335" y="1846" fill="#ecf4fd" font-size="15" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">decisions</text>
+    <text x="1534" y="1846" fill="#bde7e0" font-size="14" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">TEXT</text>
+    <text x="1659" y="1846" fill="#d6e7f5" font-size="13" font-weight="normal" font-family="Consolas,DejaVu Sans Mono,monospace">NN · CK trim≥1</text>
+    <line x1="1334" y1="1856" x2="1868" y2="1856" stroke="#29445b" stroke-width="0.75" />
+  </g>
+  <rect x="18" y="1950" width="1904" height="156" fill="#162d40" stroke="none" rx="12" stroke-width="1" />
+  <text x="38" y="1986" fill="#e2f7ff" font-size="20" font-weight="bold" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">ERD 단독 해석 기준</text>
+  <text x="38" y="2019" fill="#cee7f5" font-size="16" font-weight="normal" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">category.code 허용값: EXPERIMENT, DAILY_WORK, RESEARCH_PLAN, DATA_PROCESSING, PROMPT, MEETING</text>
+  <text x="38" y="2050" fill="#cee7f5" font-size="16" font-weight="normal" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">index_status 허용값: pending / ready / failed     ·     prompt_versions: UNIQUE(report_id, version_no)</text>
+  <text x="38" y="2081" fill="#cee7f5" font-size="16" font-weight="normal" font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif">상세 테이블 공통: title 1..200 · content 1..20000 · author 1..100 · update_at ≥ create_at · 삭제 CASCADE</text>
+</svg>

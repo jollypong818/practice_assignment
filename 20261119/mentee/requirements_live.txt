@@ -1,0 +1,7 @@
+# 실제 E5 모델/pgvector 실행이 필요할 때만 추가 설치
+# 이미 설치한 정상 Python venv의 버전은 강사 사전 검증 후 유지
+sentence-transformers>=3
+psycopg[binary]>=3.2
+pgvector>=0.5
+python-dotenv>=1
+numpy>=1.26

@@ -1,0 +1,38 @@
+[
+  {
+    "doc_id": "DOC-ATTEND",
+    "file": "attendance.md",
+    "category": "학사",
+    "source_version": "v1"
+  },
+  {
+    "doc_id": "DOC-ASSIGN",
+    "file": "assignment.txt",
+    "category": "학사",
+    "source_version": "v1"
+  },
+  {
+    "doc_id": "DOC-FACILITY",
+    "file": "facility.html",
+    "category": "시설",
+    "source_version": "v1"
+  },
+  {
+    "doc_id": "DOC-CAREER",
+    "file": "career.pdf",
+    "category": "지원",
+    "source_version": "v1"
+  },
+  {
+    "doc_id": "DOC-SCAN",
+    "file": "scan.pdf",
+    "category": "안내",
+    "source_version": "v1"
+  },
+  {
+    "doc_id": "DOC-UNSUPPORTED",
+    "file": "unsupported.xyz",
+    "category": "기타",
+    "source_version": "v1"
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "total": 6,
+  "status_counts": {
+    "needs_ocr": 1,
+    "parsed": 4,
+    "unsupported": 1
+  },
+  "items": [
+    {
+      "doc_id": "DOC-ATTEND",
+      "status": "parsed",
+      "unit_count": 2,
+      "source_locators": [
+        "attendance.md#sec-1",
+        "attendance.md#sec-2"
+      ],
+      "reason": null
+    },
+    {
+      "doc_id": "DOC-ASSIGN",
+      "status": "parsed",
+      "unit_count": 1,
+      "source_locators": [
+        "assignment.txt"
+      ],
+      "reason": null
+    },
+    {
+      "doc_id": "DOC-FACILITY",
+      "status": "parsed",
+      "unit_count": 1,
+      "source_locators": [
+        "facility.html#main"
+      ],
+      "reason": null
+    },
+    {
+      "doc_id": "DOC-CAREER",
+      "status": "parsed",
+      "unit_count": 2,
+      "source_locators": [
+        "career.pdf#page=1",
+        "career.pdf#page=2"
+      ],
+      "reason": null
+    },
+    {
+      "doc_id": "DOC-SCAN",
+      "status": "needs_ocr",
+      "unit_count": 1,
+      "source_locators": [
+        "scan.pdf#page=1"
+      ],
+      "reason": "image_only_known_fixture"
+    },
+    {
+      "doc_id": "DOC-UNSUPPORTED",
+      "status": "unsupported",
+      "unit_count": 0,
+      "source_locators": [],
+      "reason": "unknown_extension"
+    }
+  ],
+  "repeat_equal": true
+}

@@ -1,0 +1,48 @@
+[
+  {
+    "query": "가중치",
+    "expected_category_codes": [
+      "EXPERIMENT",
+      "PROMPT",
+      "MEETING",
+      "DAILY_WORK"
+    ],
+    "expected_keyword": true,
+    "note": "가중치 주제의 원문을 확인한다. 초기 시드에는 ID 46의 검색어 가중치 테스트 업무 보고서도 있다. 문서 유형과 검색 주제는 다르므로 범주만으로 관련성을 확정하지 않으며 report_id 고정 채점은 하지 않는다."
+  },
+  {
+    "query": "결측치",
+    "expected_category_codes": [
+      "DATA_PROCESSING",
+      "EXPERIMENT"
+    ],
+    "expected_keyword": true
+  },
+  {
+    "query": "회의 결정",
+    "expected_category_codes": [
+      "MEETING",
+      "PROMPT",
+      "RESEARCH_PLAN"
+    ],
+    "expected_keyword": true,
+    "note": "초기 시드 ID 80은 회의 결정 사항 자동 추출 연구를 다루는 RESEARCH_PLAN이다. 문서 유형과 검색 주제는 일대일이 아니므로 관련 연구계획도 허용한다. ID는 원문 확인 예시이며 고정 채점값이 아니다."
+  },
+  {
+    "query": "프롬프트 버전",
+    "expected_category_codes": [
+      "PROMPT",
+      "DAILY_WORK",
+      "MEETING",
+      "RESEARCH_PLAN"
+    ],
+    "expected_keyword": true,
+    "note": "초기 시드 ID 86은 프롬프트 버전 자동 회귀 평가를 다루는 RESEARCH_PLAN이다. 문서 유형과 검색 주제는 일대일이 아니므로 관련 연구계획도 허용한다. ID는 원문 확인 예시이며 고정 채점값이 아니다."
+  },
+  {
+    "query": "화성의 낙타 전용 미용실",
+    "expected_category_codes": [],
+    "expected_keyword": false,
+    "note": "의미 검색 점수로 not_found 판정 실제 확인(임계값 보정 필요)"
+  }
+]

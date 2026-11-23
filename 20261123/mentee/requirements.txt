@@ -1,0 +1,2 @@
+# 01~07 및 08의 API/LLM 코드에 필요한 기본 묶음
+-r requirements_llm.txt

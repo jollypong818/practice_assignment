@@ -1,0 +1,32 @@
+[
+  {
+    "query": "15분 늦으면 어떻게 기록되나요?",
+    "category": "학사",
+    "candidate_k": 3,
+    "context_k": 2
+  },
+  {
+    "query": "과제 파일은 어디에 보관하나요?",
+    "category": "학사",
+    "candidate_k": 3,
+    "context_k": 2
+  },
+  {
+    "query": "내 과제의 정확한 마감 날짜는?",
+    "category": "학사",
+    "candidate_k": 3,
+    "context_k": 2
+  },
+  {
+    "query": "회의실을 이용하려면 무엇이 필요한가요?",
+    "category": "시설",
+    "candidate_k": 3,
+    "context_k": 2
+  },
+  {
+    "query": "이번 주말 날씨는 어떤가요?",
+    "category": "학사",
+    "candidate_k": 3,
+    "context_k": 2
+  }
+]

@@ -1,0 +1,8 @@
+# 비밀·실행 결과는 업로드하지 않습니다.
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+**/outputs/
+**/*.log

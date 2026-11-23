@@ -1,0 +1,22 @@
+# 기술 용어 빠른 설명
+
+- **Collection**: 파일/URL 등 원문과 출처를 확보하는 단계입니다.
+- **Manifest**: 수집할 문서와 처리 상태의 목록입니다.
+- **UTF-8**: Unicode 문자를 바이트로 표현하는 가변 길이 Encoding입니다. 예: `len("가")=1`, `len("가".encode("utf-8"))=3`.
+- **Parsing**: 원문 형식을 읽고 텍스트·제목·문단·페이지·표 구조를 추출합니다.
+- **OCR (Optical Character Recognition)**: 이미지의 문자를 인식하는 별도 작업입니다. 일반 pypdf 텍스트 추출과 다릅니다.
+- **NFC (Normalization Form C)**: 정준적으로 같은 Unicode 문자열을 합성된 표기로 맞춥니다.
+- **NFKC (Normalization Form KC)**: 호환 표현도 변환합니다. 예: `① → 1` (원래 표기가 바뀔 수 있음).
+- **Chunking**: 문서를 검색 가능한 작은 본문 단위로 나눕니다.
+- **Chunk Size**: 청크의 크기를 정한 기준입니다. 문자와 Token을 혼용하지 않습니다.
+- **Overlap**: 이웃 청크가 일부 본문을 의도적으로 공유합니다.
+- **Offset / Span**: `clean_text` 안의 문자 시작·끝 범위 `[start,end)`입니다. 원본 PDF 바이트/좌표와 다릅니다.
+- **Coverage**: 검사하는 `clean_text` 문자 위치 중 청크가 덮은 고유 위치의 비율입니다.
+- **Metadata**: 문서 ID·버전·분류·위치·처리 계약 등 본문을 설명하는 정보입니다.
+- **Indexing Pipeline**: 수집→파싱→정제→분할→검증→임베딩→저장/공개 전체 처리입니다. DB 인덱스 생성과 다른 범위입니다.
+- **Embedding**: 문장/청크를 유사도 비교가 가능한 벡터로 나타내는 모델 출력입니다.
+- **Top-k**: 질의와 가까운 순서의 최대 k개 후보입니다. 유사도가 높아도 정답·사실을 보증하지 않습니다.
+- **Stage / Publish**: 새 버전을 준비하고 검증 후 검색 대상으로 전환하는 두 단계입니다.
+- **Transaction**: 일부 DB 변경이 실패하면 함께 Rollback하게 하는 처리 경계입니다.
+- **Idempotence**: 같은 입력·설정의 반복 실행에서 저장 결과가 불필요하게 늘거나 바뀌지 않는 성질입니다.
+- **Citation Mapping**: DB의 정수형 citation_id와 문자열 chunk_id·원문 Locator를 연결합니다.

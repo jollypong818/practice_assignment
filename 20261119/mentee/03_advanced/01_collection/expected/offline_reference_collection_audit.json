@@ -1,0 +1,18 @@
+{
+  "input_count": 6,
+  "by_status": {
+    "collected": 5,
+    "unsupported": 1,
+    "read_error": 0
+  },
+  "failures": [
+    {
+      "doc_id": "DOC-UNSUPPORTED",
+      "status": "unsupported",
+      "reason": "extension"
+    }
+  ],
+  "fingerprint": "cb754a4265c104ef7d2bbe4be939ab1588fe84df7abe852b94f2323eab871b94",
+  "repeat_equal": true,
+  "change_example": "changed"
+}
