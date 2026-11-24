@@ -1,0 +1,2 @@
+# 강의·실습 공통. CUDA torch는 수강생 PC에서 공식 selector로 별도 설치
+-r requirements_llm.txt

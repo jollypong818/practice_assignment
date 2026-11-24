@@ -1,0 +1,15 @@
+{
+  "execution_mode": "offline_fixture",
+  "row": {
+    "candidate_ids": [
+      "FAC-102-C1",
+      "FAC-103-C1",
+      "FAC-104-C1",
+      "FAC-105-C1",
+      "FAC-109-C1"
+    ],
+    "candidate_k": 5,
+    "context_k": 2,
+    "category": "시설"
+  }
+}

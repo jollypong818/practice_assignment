@@ -1,0 +1,57 @@
+[
+  {
+    "case_id": "G01",
+    "question": "15분 지각 기준은?",
+    "context": "15분까지 지각, 15분 초과 결석",
+    "claims": [
+      {
+        "text": "15분까지는 지각",
+        "supported": true
+      },
+      {
+        "text": "15분을 초과하면 결석",
+        "supported": true
+      },
+      {
+        "text": "벌금이 5만원",
+        "supported": false
+      }
+    ],
+    "relevance": "높음",
+    "correctness": "부분정답"
+  },
+  {
+    "case_id": "G02",
+    "question": "정확한 과제 마감일은?",
+    "context": "과제 제출일은 담당자의 공지에 따름",
+    "claims": [
+      {
+        "text": "내일 오후 6시 마감",
+        "supported": false
+      }
+    ],
+    "relevance": "높음",
+    "correctness": "오답"
+  },
+  {
+    "case_id": "G03",
+    "question": "과제 제출기한은?",
+    "context": "회의실은 운영실 승인 후 사용",
+    "claims": [
+      {
+        "text": "회의실 사용은 승인 필요",
+        "supported": true
+      }
+    ],
+    "relevance": "낮음",
+    "correctness": "오답"
+  },
+  {
+    "case_id": "G04",
+    "question": "정확한 과제 마감일은?",
+    "context": "정확한 날짜는 별도 공지 예정",
+    "claims": [],
+    "relevance": "높음",
+    "correctness": "정답"
+  }
+]

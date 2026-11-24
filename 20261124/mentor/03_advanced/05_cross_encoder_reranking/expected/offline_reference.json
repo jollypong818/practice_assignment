@@ -1,0 +1,42 @@
+{
+  "execution_mode": "offline_fixture",
+  "row": {
+    "pairs": [
+      [
+        "회의실 예약을 취소하는 방법은?",
+        "회의실은 사내 예약 시스템에서 날짜, 시작 시간, 종료 시간과 이용 목적을 입력해 신청합니다. 승인 상태를 확인한 뒤 사용합니다."
+      ],
+      [
+        "회의실 예약을 취소하는 방법은?",
+        "회의실 열쇠가 필요한 공간에서는 안내 데스크에서 키를 수령하고 이용 후 반납합니다. 예약 취소 규정은 별도 문서를 참조합니다."
+      ]
+    ],
+    "before_ids": [
+      "FAC-101-C1",
+      "FAC-107-C1",
+      "FAC-102-C1",
+      "FAC-103-C1",
+      "FAC-104-C1"
+    ],
+    "after_ids": [
+      "FAC-102-C1",
+      "FAC-103-C1",
+      "FAC-104-C1"
+    ],
+    "rerank_scores": [
+      3.2,
+      2.6,
+      2.1
+    ],
+    "score_checks": {
+      "scores_finite": true,
+      "rank_sorted": true
+    },
+    "audit": {
+      "same_candidate_pool": true,
+      "metadata_kept": true,
+      "pre_rank_recorded": true
+    }
+  },
+  "note": "고정 점수는 실제 CrossEncoder 모델 점수가 아닙니다."
+}

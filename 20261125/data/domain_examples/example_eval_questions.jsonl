@@ -1,0 +1,2 @@
+{"question_id": "F-Q01", "question": "가상 입출금 통장 이용료는?", "gold_chunk_ids": ["F-G01"], "domain": "finance"}
+{"question_id": "M-Q01", "question": "가상 의료기관 예약 변경은 어디에 문의하나요?", "gold_chunk_ids": ["M-G01"], "domain": "medical"}

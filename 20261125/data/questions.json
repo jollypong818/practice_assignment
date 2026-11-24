@@ -1,0 +1,80 @@
+[
+  {
+    "question_id": "Q01",
+    "question": "회의실 예약을 취소하는 방법은?",
+    "category": "시설",
+    "history": [],
+    "answerable": true,
+    "reference_answer": "회의실 예약 시스템에서 취소를 선택하며 시작 2시간 전까지 가능합니다."
+  },
+  {
+    "question_id": "Q02",
+    "question": "그럼 취소는 어떻게 해?",
+    "category": "시설",
+    "history": [
+      {
+        "role": "user",
+        "content": "회의실 예약은 어떻게 하나요?"
+      },
+      {
+        "role": "assistant",
+        "content": "회의실 예약 시스템에서 신청합니다."
+      }
+    ],
+    "answerable": true,
+    "reference_answer": "예약 시스템의 나의 예약 메뉴에서 취소합니다."
+  },
+  {
+    "question_id": "Q03",
+    "question": "회의실 예약을 철회하려면?",
+    "category": "시설",
+    "history": [],
+    "answerable": true,
+    "reference_answer": "회의실 예약 시스템의 나의 예약에서 철회를 진행합니다."
+  },
+  {
+    "question_id": "Q04",
+    "question": "예약 시간을 바꾸고 싶은데?",
+    "category": "시설",
+    "history": [
+      {
+        "role": "user",
+        "content": "회의실 예약을 신청했어요."
+      }
+    ],
+    "answerable": true,
+    "reference_answer": "기존 예약을 취소하고 변경한 시간으로 다시 신청합니다."
+  },
+  {
+    "question_id": "Q05",
+    "question": "15분 늦으면 지각인가요?",
+    "category": "학사",
+    "history": [],
+    "answerable": true,
+    "reference_answer": "수업 시작 후 15분까지는 지각, 15분 초과는 결석입니다."
+  },
+  {
+    "question_id": "Q06",
+    "question": "정확한 과제 마감 날짜는?",
+    "category": "지원",
+    "history": [],
+    "answerable": false,
+    "reference_answer": "자료에는 정확한 마감 날짜가 없으므로 담당자 공지를 확인해야 합니다."
+  },
+  {
+    "question_id": "Q07",
+    "question": "시설 예약 승인과 취소의 차이는?",
+    "category": "시설",
+    "history": [],
+    "answerable": true,
+    "reference_answer": "예약은 담당자 승인 후 확정되고 취소는 예약 시스템에서 처리합니다."
+  },
+  {
+    "question_id": "Q08",
+    "question": "회의실 예약 30분 전 취소 가능한가요?",
+    "category": "시설",
+    "history": [],
+    "answerable": true,
+    "reference_answer": "시작 2시간 전까지만 취소할 수 있으므로 30분 전에는 일반 취소가 불가능합니다."
+  }
+]

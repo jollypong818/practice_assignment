@@ -1,0 +1,7 @@
+Day27 수강생 안내
+
+1. README.md를 먼저 읽고 .venv·CUDA·DB를 확인합니다.
+2. 01_basic/02_intermediate/03_advanced 중 한 수준을 선택합니다.
+3. 실습별 TODO만 완성하고 --offline으로 먼저 점검합니다.
+4. 실제 모델 결과는 GPU·DB·OpenAI 환경 준비 후 확인합니다.
+5. outputs 와 reports/review.md를 제출합니다.

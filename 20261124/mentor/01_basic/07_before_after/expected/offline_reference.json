@@ -1,0 +1,31 @@
+{
+  "execution_mode": "offline_fixture",
+  "row": {
+    "comparison": {
+      "before": [
+        "FAC-101-C1",
+        "FAC-107-C1",
+        "FAC-102-C1",
+        "FAC-103-C1",
+        "FAC-104-C1"
+      ],
+      "after": [
+        "FAC-102-C1",
+        "FAC-103-C1",
+        "FAC-104-C1",
+        "FAC-101-C1",
+        "FAC-107-C1"
+      ],
+      "gold": [
+        "FAC-102-C1"
+      ],
+      "k": 2,
+      "before_contains_gold": false,
+      "after_contains_gold": true
+    },
+    "interpretation": "관련 문서 Top-k 포함 여부가 달라짐 (추가 검증 필요)",
+    "search_ms": 0.467,
+    "rerank_ms": 0.096
+  },
+  "note": "관련 문서 포함 여부는 평가 기초 비교이며, 상세 평가는 Day28에서 학습."
+}

@@ -1,0 +1,3 @@
+appointment_id,visit_type,status,source_doc
+M-001,정기 검사,예약 확인,medical_faq.md
+M-002,외래 방문,일정 변경 대기,medical_faq.md

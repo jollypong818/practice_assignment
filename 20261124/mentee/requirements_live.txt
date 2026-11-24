@@ -1,0 +1,6 @@
+-r requirements_llm.txt
+numpy>=2.1,<3.0
+psycopg[binary]>=3.2,<4.0
+pgvector>=0.5,<1.0
+sentence-transformers>=3.0,<7.0
+# 주의: PyTorch CUDA Build는 본 requirements와 별개로 공식 selector에서 설치

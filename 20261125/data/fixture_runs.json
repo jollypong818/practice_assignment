@@ -1,0 +1,1126 @@
+[
+  {
+    "question_id": "Q01",
+    "variant": "baseline",
+    "candidate_ids": [
+      "FAC-101-C1",
+      "FAC-107-C1",
+      "FAC-102-C1",
+      "FAC-105-C1",
+      "FAC-104-C1"
+    ],
+    "ranked_ids": [
+      "FAC-101-C1",
+      "FAC-107-C1",
+      "FAC-102-C1",
+      "FAC-105-C1",
+      "FAC-104-C1"
+    ],
+    "included_ids": [
+      "FAC-101-C1",
+      "FAC-107-C1"
+    ],
+    "answer": "제공된 근거로는 확인할 수 없습니다.",
+    "status": "insufficient_context",
+    "sources": [],
+    "timing_ms": {
+      "retrieve": 140,
+      "rerank": 0,
+      "rewrite": 0,
+      "generate": 130
+    },
+    "mode": "offline_fixture",
+    "data_version": "d28-eval-v1"
+  },
+  {
+    "question_id": "Q01",
+    "variant": "rewrite_only",
+    "candidate_ids": [
+      "FAC-101-C1",
+      "FAC-107-C1",
+      "FAC-102-C1",
+      "FAC-105-C1",
+      "FAC-104-C1"
+    ],
+    "ranked_ids": [
+      "FAC-101-C1",
+      "FAC-102-C1",
+      "FAC-107-C1",
+      "FAC-105-C1",
+      "FAC-104-C1"
+    ],
+    "included_ids": [
+      "FAC-101-C1",
+      "FAC-102-C1"
+    ],
+    "answer": "회의실 예약 시스템에서 취소를 선택하며 시작 2시간 전까지 가능합니다.",
+    "status": "answered",
+    "sources": [
+      {
+        "chunk_id": "FAC-102-C1",
+        "citation_id": 1002,
+        "source_locator": "guides/fac-102.md#section-1"
+      }
+    ],
+    "timing_ms": {
+      "retrieve": 140,
+      "rerank": 0,
+      "rewrite": 120,
+      "generate": 130
+    },
+    "mode": "offline_fixture",
+    "data_version": "d28-eval-v1"
+  },
+  {
+    "question_id": "Q01",
+    "variant": "rerank_only",
+    "candidate_ids": [
+      "FAC-101-C1",
+      "FAC-107-C1",
+      "FAC-102-C1",
+      "FAC-105-C1",
+      "FAC-104-C1"
+    ],
+    "ranked_ids": [
+      "FAC-102-C1",
+      "FAC-101-C1",
+      "FAC-107-C1",
+      "FAC-105-C1",
+      "FAC-104-C1"
+    ],
+    "included_ids": [
+      "FAC-102-C1",
+      "FAC-101-C1"
+    ],
+    "answer": "회의실 예약 시스템에서 취소를 선택하며 시작 2시간 전까지 가능합니다.",
+    "status": "answered",
+    "sources": [
+      {
+        "chunk_id": "FAC-102-C1",
+        "citation_id": 1002,
+        "source_locator": "guides/fac-102.md#section-1"
+      }
+    ],
+    "timing_ms": {
+      "retrieve": 140,
+      "rerank": 95,
+      "rewrite": 0,
+      "generate": 130
+    },
+    "mode": "offline_fixture",
+    "data_version": "d28-eval-v1"
+  },
+  {
+    "question_id": "Q01",
+    "variant": "both",
+    "candidate_ids": [
+      "FAC-101-C1",
+      "FAC-107-C1",
+      "FAC-102-C1",
+      "FAC-105-C1",
+      "FAC-104-C1"
+    ],
+    "ranked_ids": [
+      "FAC-102-C1",
+      "FAC-101-C1",
+      "FAC-104-C1",
+      "FAC-107-C1",
+      "FAC-105-C1"
+    ],
+    "included_ids": [
+      "FAC-102-C1",
+      "FAC-101-C1"
+    ],
+    "answer": "회의실 예약 시스템에서 취소를 선택하며 시작 2시간 전까지 가능합니다.",
+    "status": "answered",
+    "sources": [
+      {
+        "chunk_id": "FAC-102-C1",
+        "citation_id": 1002,
+        "source_locator": "guides/fac-102.md#section-1"
+      }
+    ],
+    "timing_ms": {
+      "retrieve": 140,
+      "rerank": 95,
+      "rewrite": 120,
+      "generate": 130
+    },
+    "mode": "offline_fixture",
+    "data_version": "d28-eval-v1"
+  },
+  {
+    "question_id": "Q02",
+    "variant": "baseline",
+    "candidate_ids": [
+      "FAC-109-C1",
+      "FAC-101-C1",
+      "FAC-107-C1",
+      "FAC-102-C1",
+      "FAC-108-C1"
+    ],
+    "ranked_ids": [
+      "FAC-109-C1",
+      "FAC-101-C1",
+      "FAC-107-C1",
+      "FAC-102-C1",
+      "FAC-108-C1"
+    ],
+    "included_ids": [
+      "FAC-109-C1",
+      "FAC-101-C1"
+    ],
+    "answer": "제공된 근거로는 확인할 수 없습니다.",
+    "status": "insufficient_context",
+    "sources": [],
+    "timing_ms": {
+      "retrieve": 140,
+      "rerank": 0,
+      "rewrite": 0,
+      "generate": 130
+    },
+    "mode": "offline_fixture",
+    "data_version": "d28-eval-v1"
+  },
+  {
+    "question_id": "Q02",
+    "variant": "rewrite_only",
+    "candidate_ids": [
+      "FAC-109-C1",
+      "FAC-101-C1",
+      "FAC-107-C1",
+      "FAC-102-C1",
+      "FAC-108-C1"
+    ],
+    "ranked_ids": [
+      "FAC-101-C1",
+      "FAC-102-C1",
+      "FAC-107-C1",
+      "FAC-109-C1",
+      "FAC-105-C1"
+    ],
+    "included_ids": [
+      "FAC-101-C1",
+      "FAC-102-C1"
+    ],
+    "answer": "예약 시스템의 나의 예약 메뉴에서 취소합니다.",
+    "status": "answered",
+    "sources": [
+      {
+        "chunk_id": "FAC-102-C1",
+        "citation_id": 1002,
+        "source_locator": "guides/fac-102.md#section-1"
+      }
+    ],
+    "timing_ms": {
+      "retrieve": 140,
+      "rerank": 0,
+      "rewrite": 120,
+      "generate": 130
+    },
+    "mode": "offline_fixture",
+    "data_version": "d28-eval-v1"
+  },
+  {
+    "question_id": "Q02",
+    "variant": "rerank_only",
+    "candidate_ids": [
+      "FAC-109-C1",
+      "FAC-101-C1",
+      "FAC-107-C1",
+      "FAC-102-C1",
+      "FAC-108-C1"
+    ],
+    "ranked_ids": [
+      "FAC-101-C1",
+      "FAC-107-C1",
+      "FAC-102-C1",
+      "FAC-109-C1",
+      "FAC-108-C1"
+    ],
+    "included_ids": [
+      "FAC-101-C1",
+      "FAC-107-C1"
+    ],
+    "answer": "제공된 근거로는 확인할 수 없습니다.",
+    "status": "insufficient_context",
+    "sources": [],
+    "timing_ms": {
+      "retrieve": 140,
+      "rerank": 95,
+      "rewrite": 0,
+      "generate": 130
+    },
+    "mode": "offline_fixture",
+    "data_version": "d28-eval-v1"
+  },
+  {
+    "question_id": "Q02",
+    "variant": "both",
+    "candidate_ids": [
+      "FAC-109-C1",
+      "FAC-101-C1",
+      "FAC-107-C1",
+      "FAC-102-C1",
+      "FAC-108-C1"
+    ],
+    "ranked_ids": [
+      "FAC-102-C1",
+      "FAC-101-C1",
+      "FAC-107-C1",
+      "FAC-105-C1",
+      "FAC-108-C1"
+    ],
+    "included_ids": [
+      "FAC-102-C1",
+      "FAC-101-C1"
+    ],
+    "answer": "예약 시스템의 나의 예약 메뉴에서 취소합니다.",
+    "status": "answered",
+    "sources": [
+      {
+        "chunk_id": "FAC-102-C1",
+        "citation_id": 1002,
+        "source_locator": "guides/fac-102.md#section-1"
+      }
+    ],
+    "timing_ms": {
+      "retrieve": 140,
+      "rerank": 95,
+      "rewrite": 120,
+      "generate": 130
+    },
+    "mode": "offline_fixture",
+    "data_version": "d28-eval-v1"
+  },
+  {
+    "question_id": "Q03",
+    "variant": "baseline",
+    "candidate_ids": [
+      "FAC-101-C1",
+      "FAC-106-C1",
+      "FAC-102-C1",
+      "FAC-105-C1",
+      "FAC-107-C1"
+    ],
+    "ranked_ids": [
+      "FAC-101-C1",
+      "FAC-106-C1",
+      "FAC-102-C1",
+      "FAC-105-C1",
+      "FAC-107-C1"
+    ],
+    "included_ids": [
+      "FAC-101-C1",
+      "FAC-106-C1"
+    ],
+    "answer": "제공된 근거로는 확인할 수 없습니다.",
+    "status": "insufficient_context",
+    "sources": [],
+    "timing_ms": {
+      "retrieve": 140,
+      "rerank": 0,
+      "rewrite": 0,
+      "generate": 130
+    },
+    "mode": "offline_fixture",
+    "data_version": "d28-eval-v1"
+  },
+  {
+    "question_id": "Q03",
+    "variant": "rewrite_only",
+    "candidate_ids": [
+      "FAC-101-C1",
+      "FAC-106-C1",
+      "FAC-102-C1",
+      "FAC-105-C1",
+      "FAC-107-C1"
+    ],
+    "ranked_ids": [
+      "FAC-102-C1",
+      "FAC-101-C1",
+      "FAC-106-C1",
+      "FAC-107-C1",
+      "FAC-105-C1"
+    ],
+    "included_ids": [
+      "FAC-102-C1",
+      "FAC-101-C1"
+    ],
+    "answer": "회의실 예약 시스템의 나의 예약에서 철회를 진행합니다.",
+    "status": "answered",
+    "sources": [
+      {
+        "chunk_id": "FAC-102-C1",
+        "citation_id": 1002,
+        "source_locator": "guides/fac-102.md#section-1"
+      }
+    ],
+    "timing_ms": {
+      "retrieve": 140,
+      "rerank": 0,
+      "rewrite": 120,
+      "generate": 130
+    },
+    "mode": "offline_fixture",
+    "data_version": "d28-eval-v1"
+  },
+  {
+    "question_id": "Q03",
+    "variant": "rerank_only",
+    "candidate_ids": [
+      "FAC-101-C1",
+      "FAC-106-C1",
+      "FAC-102-C1",
+      "FAC-105-C1",
+      "FAC-107-C1"
+    ],
+    "ranked_ids": [
+      "FAC-102-C1",
+      "FAC-101-C1",
+      "FAC-107-C1",
+      "FAC-105-C1",
+      "FAC-106-C1"
+    ],
+    "included_ids": [
+      "FAC-102-C1",
+      "FAC-101-C1"
+    ],
+    "answer": "회의실 예약 시스템의 나의 예약에서 철회를 진행합니다.",
+    "status": "answered",
+    "sources": [
+      {
+        "chunk_id": "FAC-102-C1",
+        "citation_id": 1002,
+        "source_locator": "guides/fac-102.md#section-1"
+      }
+    ],
+    "timing_ms": {
+      "retrieve": 140,
+      "rerank": 95,
+      "rewrite": 0,
+      "generate": 130
+    },
+    "mode": "offline_fixture",
+    "data_version": "d28-eval-v1"
+  },
+  {
+    "question_id": "Q03",
+    "variant": "both",
+    "candidate_ids": [
+      "FAC-101-C1",
+      "FAC-106-C1",
+      "FAC-102-C1",
+      "FAC-105-C1",
+      "FAC-107-C1"
+    ],
+    "ranked_ids": [
+      "FAC-102-C1",
+      "FAC-101-C1",
+      "FAC-107-C1",
+      "FAC-105-C1",
+      "FAC-106-C1"
+    ],
+    "included_ids": [
+      "FAC-102-C1",
+      "FAC-101-C1"
+    ],
+    "answer": "회의실 예약 시스템의 나의 예약에서 철회를 진행합니다.",
+    "status": "answered",
+    "sources": [
+      {
+        "chunk_id": "FAC-102-C1",
+        "citation_id": 1002,
+        "source_locator": "guides/fac-102.md#section-1"
+      }
+    ],
+    "timing_ms": {
+      "retrieve": 140,
+      "rerank": 95,
+      "rewrite": 120,
+      "generate": 130
+    },
+    "mode": "offline_fixture",
+    "data_version": "d28-eval-v1"
+  },
+  {
+    "question_id": "Q04",
+    "variant": "baseline",
+    "candidate_ids": [
+      "FAC-101-C1",
+      "FAC-104-C1",
+      "FAC-103-C1",
+      "FAC-107-C1",
+      "FAC-105-C1"
+    ],
+    "ranked_ids": [
+      "FAC-101-C1",
+      "FAC-104-C1",
+      "FAC-103-C1",
+      "FAC-107-C1",
+      "FAC-105-C1"
+    ],
+    "included_ids": [
+      "FAC-101-C1",
+      "FAC-104-C1"
+    ],
+    "answer": "제공된 근거로는 확인할 수 없습니다.",
+    "status": "insufficient_context",
+    "sources": [],
+    "timing_ms": {
+      "retrieve": 140,
+      "rerank": 0,
+      "rewrite": 0,
+      "generate": 130
+    },
+    "mode": "offline_fixture",
+    "data_version": "d28-eval-v1"
+  },
+  {
+    "question_id": "Q04",
+    "variant": "rewrite_only",
+    "candidate_ids": [
+      "FAC-101-C1",
+      "FAC-104-C1",
+      "FAC-103-C1",
+      "FAC-107-C1",
+      "FAC-105-C1"
+    ],
+    "ranked_ids": [
+      "FAC-103-C1",
+      "FAC-101-C1",
+      "FAC-104-C1",
+      "FAC-107-C1",
+      "FAC-105-C1"
+    ],
+    "included_ids": [
+      "FAC-103-C1",
+      "FAC-101-C1"
+    ],
+    "answer": "기존 예약을 취소하고 변경한 시간으로 다시 신청합니다.",
+    "status": "answered",
+    "sources": [
+      {
+        "chunk_id": "FAC-103-C1",
+        "citation_id": 1003,
+        "source_locator": "guides/fac-103.md#section-1"
+      }
+    ],
+    "timing_ms": {
+      "retrieve": 140,
+      "rerank": 0,
+      "rewrite": 120,
+      "generate": 130
+    },
+    "mode": "offline_fixture",
+    "data_version": "d28-eval-v1"
+  },
+  {
+    "question_id": "Q04",
+    "variant": "rerank_only",
+    "candidate_ids": [
+      "FAC-101-C1",
+      "FAC-104-C1",
+      "FAC-103-C1",
+      "FAC-107-C1",
+      "FAC-105-C1"
+    ],
+    "ranked_ids": [
+      "FAC-103-C1",
+      "FAC-101-C1",
+      "FAC-104-C1",
+      "FAC-107-C1",
+      "FAC-105-C1"
+    ],
+    "included_ids": [
+      "FAC-103-C1",
+      "FAC-101-C1"
+    ],
+    "answer": "기존 예약을 취소하고 변경한 시간으로 다시 신청합니다.",
+    "status": "answered",
+    "sources": [
+      {
+        "chunk_id": "FAC-103-C1",
+        "citation_id": 1003,
+        "source_locator": "guides/fac-103.md#section-1"
+      }
+    ],
+    "timing_ms": {
+      "retrieve": 140,
+      "rerank": 95,
+      "rewrite": 0,
+      "generate": 130
+    },
+    "mode": "offline_fixture",
+    "data_version": "d28-eval-v1"
+  },
+  {
+    "question_id": "Q04",
+    "variant": "both",
+    "candidate_ids": [
+      "FAC-101-C1",
+      "FAC-104-C1",
+      "FAC-103-C1",
+      "FAC-107-C1",
+      "FAC-105-C1"
+    ],
+    "ranked_ids": [
+      "FAC-103-C1",
+      "FAC-104-C1",
+      "FAC-101-C1",
+      "FAC-105-C1",
+      "FAC-107-C1"
+    ],
+    "included_ids": [
+      "FAC-103-C1",
+      "FAC-104-C1"
+    ],
+    "answer": "기존 예약을 취소하고 변경한 시간으로 다시 신청합니다.",
+    "status": "answered",
+    "sources": [
+      {
+        "chunk_id": "FAC-103-C1",
+        "citation_id": 1003,
+        "source_locator": "guides/fac-103.md#section-1"
+      }
+    ],
+    "timing_ms": {
+      "retrieve": 140,
+      "rerank": 95,
+      "rewrite": 120,
+      "generate": 130
+    },
+    "mode": "offline_fixture",
+    "data_version": "d28-eval-v1"
+  },
+  {
+    "question_id": "Q05",
+    "variant": "baseline",
+    "candidate_ids": [
+      "ACA-102-C1",
+      "ACA-103-C1",
+      "ACA-101-C1",
+      "ACA-104-C1"
+    ],
+    "ranked_ids": [
+      "ACA-102-C1",
+      "ACA-103-C1",
+      "ACA-101-C1",
+      "ACA-104-C1"
+    ],
+    "included_ids": [
+      "ACA-102-C1",
+      "ACA-103-C1"
+    ],
+    "answer": "제공된 근거로는 확인할 수 없습니다.",
+    "status": "insufficient_context",
+    "sources": [],
+    "timing_ms": {
+      "retrieve": 128,
+      "rerank": 0,
+      "rewrite": 0,
+      "generate": 130
+    },
+    "mode": "offline_fixture",
+    "data_version": "d28-eval-v1"
+  },
+  {
+    "question_id": "Q05",
+    "variant": "rewrite_only",
+    "candidate_ids": [
+      "ACA-102-C1",
+      "ACA-103-C1",
+      "ACA-101-C1",
+      "ACA-104-C1"
+    ],
+    "ranked_ids": [
+      "ACA-101-C1",
+      "ACA-102-C1",
+      "ACA-103-C1",
+      "ACA-104-C1"
+    ],
+    "included_ids": [
+      "ACA-101-C1",
+      "ACA-102-C1"
+    ],
+    "answer": "수업 시작 후 15분까지는 지각, 15분 초과는 결석입니다.",
+    "status": "answered",
+    "sources": [
+      {
+        "chunk_id": "ACA-101-C1",
+        "citation_id": 1013,
+        "source_locator": "guides/aca-101.md#section-1"
+      }
+    ],
+    "timing_ms": {
+      "retrieve": 128,
+      "rerank": 0,
+      "rewrite": 120,
+      "generate": 130
+    },
+    "mode": "offline_fixture",
+    "data_version": "d28-eval-v1"
+  },
+  {
+    "question_id": "Q05",
+    "variant": "rerank_only",
+    "candidate_ids": [
+      "ACA-102-C1",
+      "ACA-103-C1",
+      "ACA-101-C1",
+      "ACA-104-C1"
+    ],
+    "ranked_ids": [
+      "ACA-101-C1",
+      "ACA-102-C1",
+      "ACA-103-C1",
+      "ACA-104-C1"
+    ],
+    "included_ids": [
+      "ACA-101-C1",
+      "ACA-102-C1"
+    ],
+    "answer": "수업 시작 후 15분까지는 지각, 15분 초과는 결석입니다.",
+    "status": "answered",
+    "sources": [
+      {
+        "chunk_id": "ACA-101-C1",
+        "citation_id": 1013,
+        "source_locator": "guides/aca-101.md#section-1"
+      }
+    ],
+    "timing_ms": {
+      "retrieve": 128,
+      "rerank": 95,
+      "rewrite": 0,
+      "generate": 130
+    },
+    "mode": "offline_fixture",
+    "data_version": "d28-eval-v1"
+  },
+  {
+    "question_id": "Q05",
+    "variant": "both",
+    "candidate_ids": [
+      "ACA-102-C1",
+      "ACA-103-C1",
+      "ACA-101-C1",
+      "ACA-104-C1"
+    ],
+    "ranked_ids": [
+      "ACA-101-C1",
+      "ACA-102-C1",
+      "ACA-103-C1",
+      "ACA-104-C1"
+    ],
+    "included_ids": [
+      "ACA-101-C1",
+      "ACA-102-C1"
+    ],
+    "answer": "수업 시작 후 15분까지는 지각, 15분 초과는 결석입니다.",
+    "status": "answered",
+    "sources": [
+      {
+        "chunk_id": "ACA-101-C1",
+        "citation_id": 1013,
+        "source_locator": "guides/aca-101.md#section-1"
+      }
+    ],
+    "timing_ms": {
+      "retrieve": 128,
+      "rerank": 95,
+      "rewrite": 120,
+      "generate": 130
+    },
+    "mode": "offline_fixture",
+    "data_version": "d28-eval-v1"
+  },
+  {
+    "question_id": "Q06",
+    "variant": "baseline",
+    "candidate_ids": [],
+    "ranked_ids": [],
+    "included_ids": [],
+    "answer": "제공된 근거로는 확인할 수 없습니다.",
+    "status": "insufficient_context",
+    "sources": [],
+    "timing_ms": {
+      "retrieve": 80,
+      "rerank": 0,
+      "rewrite": 0,
+      "generate": 130
+    },
+    "mode": "offline_fixture",
+    "data_version": "d28-eval-v1"
+  },
+  {
+    "question_id": "Q06",
+    "variant": "rewrite_only",
+    "candidate_ids": [],
+    "ranked_ids": [],
+    "included_ids": [],
+    "answer": "제공된 근거로는 확인할 수 없습니다.",
+    "status": "insufficient_context",
+    "sources": [],
+    "timing_ms": {
+      "retrieve": 80,
+      "rerank": 0,
+      "rewrite": 120,
+      "generate": 130
+    },
+    "mode": "offline_fixture",
+    "data_version": "d28-eval-v1"
+  },
+  {
+    "question_id": "Q06",
+    "variant": "rerank_only",
+    "candidate_ids": [],
+    "ranked_ids": [],
+    "included_ids": [],
+    "answer": "제공된 근거로는 확인할 수 없습니다.",
+    "status": "insufficient_context",
+    "sources": [],
+    "timing_ms": {
+      "retrieve": 80,
+      "rerank": 95,
+      "rewrite": 0,
+      "generate": 130
+    },
+    "mode": "offline_fixture",
+    "data_version": "d28-eval-v1"
+  },
+  {
+    "question_id": "Q06",
+    "variant": "both",
+    "candidate_ids": [],
+    "ranked_ids": [],
+    "included_ids": [],
+    "answer": "제공된 근거로는 확인할 수 없습니다.",
+    "status": "insufficient_context",
+    "sources": [],
+    "timing_ms": {
+      "retrieve": 80,
+      "rerank": 95,
+      "rewrite": 120,
+      "generate": 130
+    },
+    "mode": "offline_fixture",
+    "data_version": "d28-eval-v1"
+  },
+  {
+    "question_id": "Q07",
+    "variant": "baseline",
+    "candidate_ids": [
+      "FAC-101-C1",
+      "FAC-102-C1",
+      "FAC-107-C1",
+      "FAC-104-C1",
+      "FAC-105-C1"
+    ],
+    "ranked_ids": [
+      "FAC-101-C1",
+      "FAC-102-C1",
+      "FAC-107-C1",
+      "FAC-104-C1",
+      "FAC-105-C1"
+    ],
+    "included_ids": [
+      "FAC-101-C1",
+      "FAC-102-C1"
+    ],
+    "answer": "예약은 담당자 승인 후 확정되고 취소는 예약 시스템에서 처리합니다.",
+    "status": "answered",
+    "sources": [
+      {
+        "chunk_id": "FAC-102-C1",
+        "citation_id": 1002,
+        "source_locator": "guides/fac-102.md#section-1"
+      }
+    ],
+    "timing_ms": {
+      "retrieve": 140,
+      "rerank": 0,
+      "rewrite": 0,
+      "generate": 130
+    },
+    "mode": "offline_fixture",
+    "data_version": "d28-eval-v1"
+  },
+  {
+    "question_id": "Q07",
+    "variant": "rewrite_only",
+    "candidate_ids": [
+      "FAC-101-C1",
+      "FAC-102-C1",
+      "FAC-107-C1",
+      "FAC-104-C1",
+      "FAC-105-C1"
+    ],
+    "ranked_ids": [
+      "FAC-104-C1",
+      "FAC-101-C1",
+      "FAC-102-C1",
+      "FAC-107-C1",
+      "FAC-105-C1"
+    ],
+    "included_ids": [
+      "FAC-104-C1",
+      "FAC-101-C1"
+    ],
+    "answer": "예약은 담당자 승인 후 확정되고 취소는 예약 시스템에서 처리합니다.",
+    "status": "answered",
+    "sources": [
+      {
+        "chunk_id": "FAC-104-C1",
+        "citation_id": 1004,
+        "source_locator": "guides/fac-104.md#section-1"
+      }
+    ],
+    "timing_ms": {
+      "retrieve": 140,
+      "rerank": 0,
+      "rewrite": 120,
+      "generate": 130
+    },
+    "mode": "offline_fixture",
+    "data_version": "d28-eval-v1"
+  },
+  {
+    "question_id": "Q07",
+    "variant": "rerank_only",
+    "candidate_ids": [
+      "FAC-101-C1",
+      "FAC-102-C1",
+      "FAC-107-C1",
+      "FAC-104-C1",
+      "FAC-105-C1"
+    ],
+    "ranked_ids": [
+      "FAC-102-C1",
+      "FAC-104-C1",
+      "FAC-101-C1",
+      "FAC-107-C1",
+      "FAC-105-C1"
+    ],
+    "included_ids": [
+      "FAC-102-C1",
+      "FAC-104-C1"
+    ],
+    "answer": "예약은 담당자 승인 후 확정되고 취소는 예약 시스템에서 처리합니다.",
+    "status": "answered",
+    "sources": [
+      {
+        "chunk_id": "FAC-102-C1",
+        "citation_id": 1002,
+        "source_locator": "guides/fac-102.md#section-1"
+      },
+      {
+        "chunk_id": "FAC-104-C1",
+        "citation_id": 1004,
+        "source_locator": "guides/fac-104.md#section-1"
+      }
+    ],
+    "timing_ms": {
+      "retrieve": 140,
+      "rerank": 95,
+      "rewrite": 0,
+      "generate": 130
+    },
+    "mode": "offline_fixture",
+    "data_version": "d28-eval-v1"
+  },
+  {
+    "question_id": "Q07",
+    "variant": "both",
+    "candidate_ids": [
+      "FAC-101-C1",
+      "FAC-102-C1",
+      "FAC-107-C1",
+      "FAC-104-C1",
+      "FAC-105-C1"
+    ],
+    "ranked_ids": [
+      "FAC-104-C1",
+      "FAC-102-C1",
+      "FAC-101-C1",
+      "FAC-105-C1",
+      "FAC-107-C1"
+    ],
+    "included_ids": [
+      "FAC-104-C1",
+      "FAC-102-C1"
+    ],
+    "answer": "예약은 담당자 승인 후 확정되고 취소는 예약 시스템에서 처리합니다.",
+    "status": "answered",
+    "sources": [
+      {
+        "chunk_id": "FAC-104-C1",
+        "citation_id": 1004,
+        "source_locator": "guides/fac-104.md#section-1"
+      },
+      {
+        "chunk_id": "FAC-102-C1",
+        "citation_id": 1002,
+        "source_locator": "guides/fac-102.md#section-1"
+      }
+    ],
+    "timing_ms": {
+      "retrieve": 140,
+      "rerank": 95,
+      "rewrite": 120,
+      "generate": 130
+    },
+    "mode": "offline_fixture",
+    "data_version": "d28-eval-v1"
+  },
+  {
+    "question_id": "Q08",
+    "variant": "baseline",
+    "candidate_ids": [
+      "FAC-108-C1",
+      "FAC-101-C1",
+      "FAC-102-C1",
+      "FAC-107-C1",
+      "FAC-105-C1"
+    ],
+    "ranked_ids": [
+      "FAC-108-C1",
+      "FAC-101-C1",
+      "FAC-102-C1",
+      "FAC-107-C1",
+      "FAC-105-C1"
+    ],
+    "included_ids": [
+      "FAC-108-C1",
+      "FAC-101-C1"
+    ],
+    "answer": "제공된 근거로는 확인할 수 없습니다.",
+    "status": "insufficient_context",
+    "sources": [],
+    "timing_ms": {
+      "retrieve": 140,
+      "rerank": 0,
+      "rewrite": 0,
+      "generate": 130
+    },
+    "mode": "offline_fixture",
+    "data_version": "d28-eval-v1"
+  },
+  {
+    "question_id": "Q08",
+    "variant": "rewrite_only",
+    "candidate_ids": [
+      "FAC-108-C1",
+      "FAC-101-C1",
+      "FAC-102-C1",
+      "FAC-107-C1",
+      "FAC-105-C1"
+    ],
+    "ranked_ids": [
+      "FAC-102-C1",
+      "FAC-108-C1",
+      "FAC-101-C1",
+      "FAC-107-C1",
+      "FAC-105-C1"
+    ],
+    "included_ids": [
+      "FAC-102-C1",
+      "FAC-108-C1"
+    ],
+    "answer": "시작 2시간 전까지만 취소할 수 있으므로 30분 전에는 일반 취소가 불가능합니다.",
+    "status": "answered",
+    "sources": [
+      {
+        "chunk_id": "FAC-102-C1",
+        "citation_id": 1002,
+        "source_locator": "guides/fac-102.md#section-1"
+      }
+    ],
+    "timing_ms": {
+      "retrieve": 140,
+      "rerank": 0,
+      "rewrite": 120,
+      "generate": 130
+    },
+    "mode": "offline_fixture",
+    "data_version": "d28-eval-v1"
+  },
+  {
+    "question_id": "Q08",
+    "variant": "rerank_only",
+    "candidate_ids": [
+      "FAC-108-C1",
+      "FAC-101-C1",
+      "FAC-102-C1",
+      "FAC-107-C1",
+      "FAC-105-C1"
+    ],
+    "ranked_ids": [
+      "FAC-102-C1",
+      "FAC-108-C1",
+      "FAC-101-C1",
+      "FAC-107-C1",
+      "FAC-105-C1"
+    ],
+    "included_ids": [
+      "FAC-102-C1",
+      "FAC-108-C1"
+    ],
+    "answer": "시작 2시간 전까지만 취소할 수 있으므로 30분 전에는 일반 취소가 불가능합니다.",
+    "status": "answered",
+    "sources": [
+      {
+        "chunk_id": "FAC-102-C1",
+        "citation_id": 1002,
+        "source_locator": "guides/fac-102.md#section-1"
+      }
+    ],
+    "timing_ms": {
+      "retrieve": 140,
+      "rerank": 95,
+      "rewrite": 0,
+      "generate": 130
+    },
+    "mode": "offline_fixture",
+    "data_version": "d28-eval-v1"
+  },
+  {
+    "question_id": "Q08",
+    "variant": "both",
+    "candidate_ids": [
+      "FAC-108-C1",
+      "FAC-101-C1",
+      "FAC-102-C1",
+      "FAC-107-C1",
+      "FAC-105-C1"
+    ],
+    "ranked_ids": [
+      "FAC-102-C1",
+      "FAC-108-C1",
+      "FAC-101-C1",
+      "FAC-107-C1",
+      "FAC-105-C1"
+    ],
+    "included_ids": [
+      "FAC-102-C1",
+      "FAC-108-C1"
+    ],
+    "answer": "시작 2시간 전까지만 취소할 수 있으므로 30분 전에는 일반 취소가 불가능합니다.",
+    "status": "answered",
+    "sources": [
+      {
+        "chunk_id": "FAC-102-C1",
+        "citation_id": 1002,
+        "source_locator": "guides/fac-102.md#section-1"
+      }
+    ],
+    "timing_ms": {
+      "retrieve": 140,
+      "rerank": 95,
+      "rewrite": 120,
+      "generate": 130
+    },
+    "mode": "offline_fixture",
+    "data_version": "d28-eval-v1"
+  }
+]

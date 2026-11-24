@@ -1,0 +1,87 @@
+[
+  {
+    "id": "Q01",
+    "question": "회의실 예약을 취소하는 방법은?",
+    "category": "시설",
+    "history": [],
+    "gold_chunk_ids": [
+      "FAC-102-C1"
+    ]
+  },
+  {
+    "id": "Q02",
+    "question": "그럼 취소는 어떻게 해?",
+    "category": "시설",
+    "history": [
+      {
+        "role": "user",
+        "content": "회의실 예약은 어떻게 하나요?"
+      },
+      {
+        "role": "assistant",
+        "content": "회의실 예약 시스템에서 신청합니다."
+      }
+    ],
+    "gold_chunk_ids": [
+      "FAC-102-C1"
+    ]
+  },
+  {
+    "id": "Q03",
+    "question": "회의실 예약을 철회하려면?",
+    "category": "시설",
+    "history": [],
+    "gold_chunk_ids": [
+      "FAC-102-C1"
+    ]
+  },
+  {
+    "id": "Q04",
+    "question": "예약 시간을 바꾸고 싶은데?",
+    "category": "시설",
+    "history": [
+      {
+        "role": "user",
+        "content": "회의실 예약을 신청했어요."
+      }
+    ],
+    "gold_chunk_ids": [
+      "FAC-103-C1"
+    ]
+  },
+  {
+    "id": "Q05",
+    "question": "15분 늦으면 지각인가요?",
+    "category": "학사",
+    "history": [],
+    "gold_chunk_ids": [
+      "ACA-101-C1"
+    ]
+  },
+  {
+    "id": "Q06",
+    "question": "정확한 과제 마감 날짜는?",
+    "category": "지원",
+    "history": [],
+    "gold_chunk_ids": []
+  },
+  {
+    "id": "Q07",
+    "question": "시설 예약 승인과 취소의 차이는?",
+    "category": "시설",
+    "history": [],
+    "gold_chunk_ids": [
+      "FAC-104-C1",
+      "FAC-102-C1"
+    ]
+  },
+  {
+    "id": "Q08",
+    "question": "회의실 예약 30분 전 취소 가능한가요?",
+    "category": "시설",
+    "history": [],
+    "gold_chunk_ids": [
+      "FAC-102-C1"
+    ]
+  }
+]
